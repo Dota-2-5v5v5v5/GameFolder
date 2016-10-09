@@ -1,0 +1,944 @@
+"DOTAAbilities"
+{
+"item_corrupted_trident"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"ID"							"1008"  //Valve's version of this item uses the ID "8".
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"Model"							"models/props_gameplay/red_box.vmdl" 
+	"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+	"AbilityTextureName"			"corrupted_tridant"
+	
+	
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemCost"						"2000"
+	"ItemShopTags"					"damage"
+	"ItemQuality"					"component"
+	"ItemAliases"					"corrupted trident"
+
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_damage"			"34"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_item_mithril_hammer_datadriven"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"		"%bonus_damage"
+			}
+		}
+	}
+}
+"item_piercing_trident"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"                     "item_datadriven"
+	"ID"                            "1135"  //Valve's version of this item uses the ID "135".
+	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"Model"                         "models/props_gameplay/red_box.vmdl"
+	"Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+	"AbilityTextureName"            "piercing_trident"
+	
+	// Targetting
+    //-------------------------------------------------------------------------------------------------------------
+
+    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+	"AbilityUnitDamageType" 		"DAMAGE_TYPE_PHYSICAL"
+	
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemCost"                      "5400"
+	"ItemShopTags"                  "damage;attack_speed;hard_to_tag;unique"
+	"ItemQuality"                   "epic"
+	"ItemAliases"                   "pt;Piercing Trident"
+	"ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+ 
+	// Special 
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"              "FIELD_INTEGER"
+			"bonus_damage"          "75"
+		}
+		"02"
+		{
+			"var_type"              "FIELD_INTEGER"
+			"bonus_attack_speed"    "25"
+		}
+		"03"
+		{
+			"var_type"              "FIELD_INTEGER"
+			"bash_chance"           "25"
+		}
+		"04"
+		{
+			"var_type"              "FIELD_INTEGER"
+			"bash_damage"           "75"
+		}
+		"05"
+		{
+			"var_type"              "FIELD_FLOAT"
+			"bash_stun"             "0.55"
+		} 
+		"06"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bonus_attack_range"		"0"
+		}
+		"07"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"attack_spill_range"		"400"
+		}
+		"08"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"attack_spill_width"		"70"
+		}
+		"09"
+		{
+			"var_type" 					"FIELD_FLOAT"
+			"percent_damage"				".65"
+		}
+	}
+     
+	"OnProjectileHitUnit"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"psi_blades_1.lua"
+			"Function"		"DealDamage"
+		}
+	}
+   
+	"Modifiers"
+	{
+		"modifier_item_monkey_king_bar_datadriven"
+		{
+			"Passive"           "1"
+			"IsHidden"          "0"
+			"Attributes"        "MODIFIER_ATTRIBUTE"
+           
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"      "%bonus_damage"
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"      "%bonus_attack_speed"
+			}
+           
+			"States"
+			{
+				"MODIFIER_STATE_CANNOT_MISS"            "MODIFIER_STATE_VALUE_ENABLED"  //When attacking uphill, cannot miss units but can still miss buildings.
+			}
+           
+           
+			"OnAttackLanded"
+			{
+				"Random"
+				{
+					"Chance"            "%bash_chance"
+					"PseudoRandom"      "DOTA_PSEUDO_RANDOM_ITEM_MKB"
+					"OnSuccess"
+					{
+						"Damage"
+						{
+							"Target"        "TARGET"
+							"Type"          "DAMAGE_TYPE_MAGICAL"
+							"Damage"        "%bash_damage"
+						}
+                       
+						"ApplyModifier"
+						{
+							"Target"            "TARGET"
+							"ModifierName"      "modifier_item_monkey_king_bar_datadriven_bash"
+						}
+                       
+						"FireSound"
+						{
+							"EffectName"        "DOTA_Item.MKB.Minibash"
+							"Target"            "TARGET"
+						}
+					}
+				}
+			}
+		}
+		"modifier_psi_blades_datadriven"
+		{
+			"Passive"	"1"
+			"IsHidden"	"0"
+			
+			"OnAttackLanded"
+			{
+				"RunScript"
+				{
+					"ScriptFile"	"psi_blades_1.lua"
+					"Function"		"CheckAngles"
+					"particle"		"particles/generic_projectile_1.vpcf"
+					"damage"		"%attack_damage"
+				}
+			}
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"%bonus_attack_range"
+			}
+		}
+	}
+}
+"item_recipe_piercing_trident"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"ID"							"1134"  //Valve's version of this item uses the ID "134".
+	"Model"							"models/props_gameplay/red_box.vmdl"
+	"AbilityTextureName"			"item_recipe"
+	
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemCost"						"800"
+	"ItemShopTags"					"unique"
+	
+	// Recipe
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemRecipe"					"1"
+	"ItemResult"					"item_piercing_trident"
+	"ItemRequirements"
+	{
+		"01"						"item_corrupted_trident;item_javelin;item_javelin"
+	}
+}
+"item_dummy_datadriven"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"ID"                            "2001"
+	"BaseClass"                     "item_datadriven"
+	"ItemBaseLevel"                 "1"
+}
+	
+"item_powerfull_treads_strength_datadriven"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"ID"							"1063"  //Valve's version of this item uses the ID "63".
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"Model"							"models/props_gameplay/red_box.vmdl" 
+	"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+	"AbilityTextureName"			"powerfull_treads_strength_datadriven"
+	
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemCost"						"1400"
+	"ItemShopTags"					"attack_speed;move_speed;int;agi;str"
+	"ItemQuality"					"common"
+	"ItemAliases"					"powerfull treads"
+	"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_movement_speed"  "50"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_stat"			"20"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_attack_speed"	"45"
+		}
+	}
+	
+	"OnSpellStart"  //Switch to the next version of Power Treads (Intelligence).
+	{
+		"RunScript"
+		{
+			"ScriptFile"			"items/item_power_treads.lua"
+			"Function"				"item_power_treads_strength_datadriven_on_spell_start"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_item_power_treads_strength_datadriven"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"			"%bonus_stat"
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"		"%bonus_attack_speed"
+				"MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE"			"%bonus_movement_speed"
+			}
+		}
+	}
+}
+
+"item_powerfull_treads_agility_datadriven"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"ID"							"2002"  //Valve's version of this item uses the ID "63".
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"Model"							"models/props_gameplay/red_box.vmdl" 
+	"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+	"AbilityTextureName"			"powerfull_treads_agility_datadriven"
+	
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemCost"						"1400"
+	"ItemShopTags"					"attack_speed;move_speed;int;agi;str"
+	"ItemQuality"					"common"
+	"ItemAliases"					"powerfull treads"
+	"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+	"ItemPurchasable"				"0"
+	
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_movement_speed"  "50"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_stat"			"20"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_attack_speed"	"45"
+		}
+	}
+	
+	"OnSpellStart"  //Switch to the next version of Power Treads (Strength).
+	{
+		"RunScript"
+		{
+			"ScriptFile"			"items/item_power_treads.lua"
+			"Function"				"item_power_treads_agility_datadriven_on_spell_start"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_item_power_treads_agility_datadriven"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"				"%bonus_stat"
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"		"%bonus_attack_speed"
+				"MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE"			"%bonus_movement_speed"
+			}
+		}
+	}
+}
+
+
+"item_powerfull_treads_intelligence_datadriven"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"ID"							"2003"  //Valve's version of this item uses the ID "63".
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"Model"							"models/props_gameplay/red_box.vmdl" 
+	"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+	"AbilityTextureName"			"powerfull_treads_intelligence_datadriven"
+	
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemCost"						"1400"
+	"ItemShopTags"					"attack_speed;move_speed;int;agi;str"
+	"ItemQuality"					"common"
+	"ItemAliases"					"power treads"
+	"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+	"ItemPurchasable"				"0"
+		
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_movement_speed"  "50"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_stat"			"20"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_attack_speed"	"45"
+		}
+	}
+	
+	"OnSpellStart"  //Switch to the next version of Power Treads (Agility).
+	{
+		"RunScript"
+		{
+			"ScriptFile"			"items/item_power_treads.lua"
+			"Function"				"item_power_treads_intelligence_datadriven_on_spell_start"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_item_power_treads_intelligence_datadriven"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"			"%bonus_stat"
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"		"%bonus_attack_speed"
+				"MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE"			"%bonus_movement_speed"
+			}
+		}
+	}
+}
+"item_recipe_powerfull_treads_strength_datadriven"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"ID"							"11340"  //Valve's version of this item uses the ID "134".
+	"Model"							"models/props_gameplay/red_box.vmdl"
+	"AbilityTextureName"			"item_recipe"
+	
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemCost"						"350"
+	"ItemShopTags"					"unique"
+	
+	// Recipe
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemRecipe"					"1"
+	"ItemResult"					"item_powerfull_treads_strength_datadriven"
+	"ItemRequirements"
+	{	"01"						"item_power_treads;item_ogre_axe"
+		"02"						"item_power_treads;item_blade_of_alacrity"		
+		"03"						"item_power_treads;item_staff_of_wizardry"
+	}
+}
+"item_brawlers_bottle"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"ID"							"20000"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			"brawlers_bottle"
+		
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"300"
+		"ItemShopTags"					"damage;tutorial"
+		"ItemQuality"					"component"
+		"ItemAliases"					""
+		"SideShop"						"1"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"5"
+			}
+		}
+		"Modifiers"
+	{
+		"modifier_item_power_treads_intelligence_datadriven"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"      "%bonus_damage"
+			}
+		}
+	}
+	}
+	"item_frost_orb"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"ID"							"9000"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"                         "models/props_gameplay/red_box.vmdl"
+		"AbilityTextureName"			"frost_orb"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1400"
+		"ItemShopTags"					"armor"
+		"ItemQuality"					"common"
+		"ItemAliases"					"Frost Orb"
+		"SecretShop"					"0"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"12"
+				
+			}
+
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"attack_bonus_tooltip"	"-30"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"radius"				"650"
+		}
+		}
+		"modifiers"
+		{
+		"modifier_degen_aura"
+		{
+			"Passive" 			"1"
+			"IsHidden" 			"1"
+			"IsBuff"			"1"
+
+			"Aura" 				"modifier_degen_aura_effect"
+			
+			"Aura_Radius" 		"%radius"
+			"Aura_Teams" 		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+			"Aura_Types" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+		}
+
+		"modifier_degen_aura_effect"
+		{
+			"IsDebuff"			"1"
+			"IsHidden"			"0"
+			"EffectName"		"particles/units/heroes/hero_omniknight/omniknight_degen_aura_debuff.vpcf"
+			"EffectAttachType"	"follow_origin"
+			"AbilityTextureName"	"frost_orb"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_bonus_tooltip"	
+			}
+		}
+		"modifier_frost_orb_datadriven"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			"Attributes" 		"MODIFIER_ATTRIBUTE"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"      "%bonus_armor"
+			}
+		}
+
+	}
+	}
+	"item_frost_kings_crown"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"ID"							"90000"
+		"Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+		"AbilityTextureName"			"frost_kings_crown"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"Model"                         "models/props_gameplay/red_box.vmdl"
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCooldown"				"25.0"
+		"AbilityManaCost"				"130"
+		"AbilityModifierSupportValue"	"0.5"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"4550"
+		"ItemShopTags"					"armor"
+		"ItemQuality"					"common"
+		"ItemAliases"					"Frost Orb"
+		"SecretShop"					"0"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_armor"			"16"
+				
+		}
+
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"attack_bonus_tooltip"	"-40"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"damage_per_second_tooltip"			"50"
+		}
+		"04"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"duration"			"2.5"
+		}
+		"05"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"hero_damage_tooltip"			"195"
+		}
+		"06"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"creep_duration"	"10.0"
+		}
+		"07"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"creep_damage_tooltip"	"1000"
+		}
+		"08"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"damage"			"140"
+		}
+		"09"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"stun_duration"		"2.5"
+		}
+		"10"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"damage_interval"	"0.5"
+		}
+		"12"
+		{	
+			"var_type"			"FIELD_INTEGER"
+			"intellect_bonus" 		"18"
+		}
+	}
+		"precache"
+	{
+		"soundfile"				"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
+		"particle"				"particles/maiden_frostbite_buff_1.vpcf"
+		"particle"				"particles/maiden_frostbite_1.vpcf"
+	}
+		
+		"OnSpellStart"
+	{
+		"TrackingProjectile"
+		{
+			"Target"			"TARGET"
+			"EffectName"		"particles/units/heroes/hero_crystalmaiden/maiden_frostbite.vpcf"
+			"MoveSpeed"			"2000"
+		}
+	
+		"Stun"
+		{
+			"Target"			"TARGET"
+			"Duration"			"%stun_duration"
+		}
+		
+		"ApplyModifier"
+		{
+			"Target"
+			{
+				"Center"		"TARGET"
+				"Types"			"DOTA_UNIT_TARGET_HERO"
+			}
+			"ModifierName"		"modifier_frost_bite_root_datadriven"
+			"Duration"			"%duration"
+		}
+		
+		"ApplyModifier"
+		{
+			"Target"
+			{
+				"Center"		"TARGET"
+				"Types"			"DOTA_UNIT_TARGET_HERO"
+			}
+			"ModifierName"		"modifier_frost_bite_damage_datadriven"
+			"Duration"			"%duration - %damage_interval"
+		}
+		
+		"ApplyModifier"
+		{
+			"Target"
+			{
+				"Center"		"TARGET"
+				"Types"			"DOTA_UNIT_TARGET_BASIC"
+			}
+			"ModifierName"		"modifier_frost_bite_root_datadriven"
+			"Duration"			"%creep_duration"
+		}
+		
+		"ApplyModifier"
+		{
+			"Target"
+			{
+				"Center"		"TARGET"
+				"Types"			"DOTA_UNIT_TARGET_BASIC"
+			}
+			"ModifierName"		"modifier_frost_bite_root_datadriven"
+			"Duration"			"%creep_duration - %damage_interval"
+		}
+		
+		"FireSound"
+		{
+			"Target"			"TARGET"
+			"EffectName"		"hero_Crystal.frostbite"
+		}
+	}
+	
+	"modifiers"
+	{
+		"modifier_frost_bite_root_datadriven"
+		{
+			"IsPurgable"		"1"
+		
+			"EffectName"		"particles/maiden_frostbite_buff_1.vpcf"
+		
+			"States"
+			{
+				"MODIFIER_STATE_ROOTED"		"MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_INVISIBLE"	"MODIFIER_STATE_VALUE_DISABLED"
+			}
+		}
+		
+		"modifier_frost_bite_damage_datadriven"
+		{
+			"IsPurgable"		"1"
+			"IsHidden"		"1"
+			
+			"OnCreated"
+			{
+				"Damage"
+				{
+					"Target"	"TARGET"
+					"Damage"	"%damage_per_second_tooltip / 2"
+					"Type"		"DAMAGE_TYPE_MAGICAL"
+				}
+			}
+			
+			"ThinkInterval"		"%damage_interval"
+			"OnIntervalThink"
+			{
+				"Damage"
+				{
+					"Target"	"TARGET"
+					"Damage"	"%damage_per_second_tooltip / 2"
+					"Type"		"DAMAGE_TYPE_MAGICAL"
+				}
+			}
+		}
+		
+		"modifier_degen_aura"
+		{
+			"Passive" 			"1"
+			"IsHidden" 			"1"
+			"IsBuff"			"1"
+
+			"Aura" 				"modifier_degen_aura_effect"
+			
+			"Aura_Radius" 		"%radius"
+			"Aura_Teams" 		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+			"Aura_Types" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+		}
+
+		"modifier_frost_kings_curse_effect"
+		{
+			"IsDebuff"			"1"
+			"IsHidden"			"0"
+			"EffectName"		"particles/units/heroes/hero_omniknight/omniknight_degen_aura_debuff.vpcf"
+			"EffectAttachType"	"follow_origin"
+			"AbilityTextureName"	"frost_kings_crown"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_bonus_tooltip"	
+			}
+		}
+		"modifier_frost_orb_datadriven"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"      "%bonus_armor"
+			}
+		}
+		"modifier_frost_kings_crown_intelligence"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			"Attributes" 		"MODIFIER_ATTRIBUTE"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" 	"%intellect_bonus"
+			}
+		
+		}
+	}
+	}
+	
+	"item_recipe_frost_kings_crown"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"ID"							"113401"  //Valve's version of this item uses the ID "134".
+	"Model"							"models/props_gameplay/red_box.vmdl"
+	"AbilityTextureName"			"item_recipe"
+	
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemCost"						"750"
+	"ItemShopTags"					"unique"
+	
+	// Recipe
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemRecipe"					"1"
+	"ItemResult"					"item_frost_kings_crown"
+	"ItemRequirements"
+	{	
+	"01"						"item_frost_orb;item_staff_of_wizardry"
+	}
+}
+"item_gusty_boots"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"ID"							"1029"  //Valve's version of this item uses the ID "29".
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"Model"							"models/props_gameplay/boots_of_speed.mdl"
+	"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+	"AbilityTextureName"			"gusty_boots"
+	
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemCost"						"450"
+	"ItemShopTags"					"move_speed"
+	"ItemQuality"					"common"
+	"ItemAliases"					"gusty boots"
+	"SideShop"						"0"
+
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"bonus_movement_speed"			"80"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_item_boots_datadriven"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE"		"%bonus_movement_speed"
+			}
+		}
+	}
+	
+}
+	"item_recipe_gusty_boots"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"ID"							"1134098"  //Valve's version of this item uses the ID "134".
+	"Model"							"models/props_gameplay/red_box.vmdl"
+	"AbilityTextureName"			"item_recipe"
+	
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemCost"						"265"
+	"ItemShopTags"					"unique"
+	
+	// Recipe
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemRecipe"					"1"
+	"ItemResult"					"item_gusty_boots"
+	"ItemRequirements"
+	{	
+	"01"						"item_boots;item_wind_lace"
+	}
+}
+
+}
