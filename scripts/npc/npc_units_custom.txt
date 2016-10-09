@@ -16,10 +16,10 @@
 		"SoundSet"					"0"					// Name of sound set.
 		"Level"						"1"
 		"IsAncient"					"0"
-		"IsNeutralUnitType"			"0"
-		"SelectionGroup"			""					// Units with the same selection group will cycle together when tabbing through owned units
-		"SelectOnSpawn"				"0"
-		"CanBeDominated"			"1"
+		"IsNeutralUnitType"				"0"
+		"SelectionGroup"				""					// Units with the same selection group will cycle together when tabbing through owned units
+		"SelectOnSpawn"					"0"
+		"CanBeDominated"				"1"
 		"IgnoreAddSummonedToSelection" "0"
 		"AutoAttacksByDefault"		"1"
 		
@@ -767,7 +767,7 @@
 	}	
 	
 //=================================================================================
-// Creeps: Tempest Tower 1 TOP
+// Towers: Tempest Tower 1 TOP
 //=================================================================================
 	"npc_dota_custom1_tower1_top"
 	{
@@ -776,15 +776,15 @@
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
 		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"1"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					""			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability1"					"tower_protection"	// Ability 1.
+		"Ability2"					"true_sight"		// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -794,25 +794,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"20"		// Physical protection.
+		"ArmorPhysical"					"20"			// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"100"		// Damage range min.
 		"AttackDamageMax"			"120"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackRate"				"1"			// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackRate"				"1"		// Speed of attack.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -822,36 +822,36 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
-		"MovementSpeed"				"0"			// Speed
-		"MovementTurnRate"			"1.0"			// Turning rate.
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementSpeed"				"0"						// Speed
+		"MovementTurnRate"			"1.0"						// Turning rate.
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"1300"		// Base health.
+		"StatusHealth"				"1300"			// Base health.
 		"StatusHealthRegen"			"0"			// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0"			// Mana regeneration rate.
 
 		// Team
 		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_CUSTOM_1"			// Team name.
+		"TeamName"				"DOTA_TEAM_CUSTOM_1"			// Team name.
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"UnitRelationshipClass"			"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -869,15 +869,15 @@
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
 		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower45"
-		"MinimapIconSize"			"320"
+		"MinimapIcon"					"minimap_tower45"
+		"MinimapIconSize"				"320"
 		"Level"						"1"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					""			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability1"					"tower_protection"			// Ability 1.
+		"Ability2"					"true_sight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -888,20 +888,20 @@
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"				"20"		// Physical protection.
-		"MagicalResistance"				"0"			// Magical protection.
+		"MagicalResistance"			"0"		// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"100"		// Damage range min.
-		"AttackDamageMax"			"120"		// Damage range max.
-		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackRate"				"1"			// Speed of attack.
+		"AttackDamageMin"		"100"		// Damage range min.
+		"AttackDamageMax"		"120"		// Damage range max.
+		"AttackDamageType"		"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"			"1"		// Speed of attack.
 		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
-		"AttackRange"				"700"		// Range within a target can be attacked.
-		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
-		"ProjectileSpeed"			"750"		// Speed of projectile.
+		"AttackRange"			"700"		// Range within a target can be attacked.
+		"ProjectileModel"		"ranged_tower_bad" // Particle system model for projectile.
+		"ProjectileSpeed"		"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
@@ -915,36 +915,36 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"			"0"		// Experience earn.
+		"BountyGoldMin"			"150"		// Gold earned min.
+		"BountyGoldMax"			"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
-		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
-		"RingRadius"				"120"
-		"HealthBarOffset"			"280"
+		"BoundsHullName"		"DOTA_HULL_SIZE_TOWER"  // Hull type used for navigation/locomotion.
+		"ProjectileCollisionSize"	"144"
+		"RingRadius"			"120"
+		"HealthBarOffset"		"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
-		"MovementSpeed"				"0"			// Speed
-		"MovementTurnRate"			"1.0"			// Turning rate.
+		"MovementCapabilities"		 "DOTA_UNIT_CAP_MOVE_NONE"	// Type of locomotion - ground, air
+		"MovementSpeed"			 "0"				// Speed
+		"MovementTurnRate"		 "1.0"				// Turning rate.
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"1300"		// Base health.
+		"StatusHealth"				"1300"			// Base health.
 		"StatusHealthRegen"			"0"			// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0"			// Mana regeneration rate.
 
 		// Team
 		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_CUSTOM_1"			// Team name.
+		"TeamName"				"DOTA_TEAM_CUSTOM_1"			// Team name.
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"UnitRelationshipClass"			"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -954,22 +954,22 @@
 //=================================================================================
 // Creeps: Tempest Tower 1 BOT
 //=================================================================================
-	"npc_dota_custom1_tower1_bot"
+			"npc_dota_custom1_tower1_bot"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
 		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"1"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					""			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability1"					"tower_protection"			// Ability 1.
+		"Ability2"					"true_sight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -979,25 +979,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"20"		// Physical protection.
+		"ArmorPhysical"					"20"			// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"100"		// Damage range min.
 		"AttackDamageMax"			"120"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackRate"				"1"			// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackRate"				"1"		// Speed of attack.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
-		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
+		"ProjectileModel"			"ranged_tower_bad"// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -1007,36 +1007,36 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
-		"MovementSpeed"				"0"			// Speed
-		"MovementTurnRate"			"1.0"			// Turning rate.
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementSpeed"				"0"						// Speed
+		"MovementTurnRate"			"1.0"						// Turning rate.
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"1300"		// Base health.
+		"StatusHealth"				"1300"			// Base health.
 		"StatusHealthRegen"			"0"			// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0"			// Mana regeneration rate.
 
 		// Team
 		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_CUSTOM_1"			// Team name.
+		"TeamName"				"DOTA_TEAM_CUSTOM_1"			// Team name.
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"UnitRelationshipClass"			"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -1047,23 +1047,23 @@
 //=================================================================================
 // Creeps: Tempest Tower 2 TOP
 //=================================================================================
-	"npc_dota_custom1_tower2_top"
+					"npc_dota_custom1_tower2_top"
 	{
 		// General
 		//
-		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
-		"Model"						"models/props_structures/tower001.mdl"// Model.
-		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"BaseClass"					"npc_dota_tower"			// Class of entity of link to.
+		"Model"						"models/props_structures/tower001.mdl"  // Model.
+		"SoundSet"					"Tower.Fire"				// Name of sound set.
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"2"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
+		"Ability1"					"backdoor_protection"	// Ability 1.
+		"Ability2"					"true_sight"		// Ability 2.
+		"Ability3"					"tower_protection"	// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -1072,25 +1072,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"120"		// Damage range min.
-		"AttackDamageMax"			"140"		// Damage range max.
+		"AttackDamageMin"			"122"		// Damage range min.
+		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -1100,20 +1100,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -1126,10 +1126,10 @@
 
 		// Team
 		//----------------------------------------------------------------
-		"TeamName"					"DOTA_TEAM_CUSTOM_1"			// Team name.
+		"TeamName"				"DOTA_TEAM_CUSTOM_1"			// Team name.
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"UnitRelationshipClass"			"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -1144,19 +1144,19 @@
 	{
 		// General
 		//
-		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
-		"Model"						"models/props_structures/tower001.mdl"// Model.
-		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower45"
-		"MinimapIconSize"			"320"
+		"BaseClass"					"npc_dota_tower"			// Class of entity of link to.
+		"Model"						"models/props_structures/tower001.mdl"	// Model.
+		"SoundSet"					"Tower.Fire"				// Name of sound set.
+		"MinimapIcon"					"minimap_tower45"
+		"MinimapIconSize"				"320"
 		"Level"						"2"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
+		"Ability2"					"tower_protection"			// Ability 2.
+		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -1166,17 +1166,17 @@
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"				"22"		// Physical protection.
-		"MagicalResistance"				"0"			// Magical protection.
+		"MagicalResistance"			"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"120"		// Damage range min.
-		"AttackDamageMax"			"140"		// Damage range max.
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"			"122"		// Damage range min.
+		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
@@ -1193,14 +1193,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
@@ -1220,9 +1220,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_1"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -1233,50 +1233,50 @@
 //=================================================================================
 // Creeps: Tempest Tower 2 BOT
 //=================================================================================
-	"npc_dota_custom1_tower2_bot"
+						"npc_dota_custom1_tower2_bot"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
 		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"2"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
-		"Ability4"					""			// Ability 4.
-		"Ability5"					""			// Ability 5.
-		"Ability6"					""			// Ability 6 - Extra.
-		"Ability7"					""			// Ability 7 - Extra.
-		"Ability8"					""			// Ability 8 - Extra.
+		"Ability2"					"tower_protection"			// Ability 2.
+		"Ability3"					"true_sight"				// Ability 3.
+		"Ability4"					""				// Ability 4.
+		"Ability5"					""				// Ability 5.
+		"Ability6"					""				// Ability 6 - Extra.
+		"Ability7"					""				// Ability 7 - Extra.
+		"Ability8"					""				// Ability 8 - Extra.
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"120"		// Damage range min.
 		"AttackDamageMax"			"140"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"	"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -1286,20 +1286,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -1313,9 +1313,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_1"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -1326,23 +1326,23 @@
 //=================================================================================
 // Creeps: Tempest Tower 3 TOP
 //=================================================================================
-	"npc_dota_custom1_tower3_top"
+					"npc_dota_custom1_tower3_top"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
 		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"3"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
+		"Ability2"					"tower_protection"			// Ability 2.
+		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -1351,7 +1351,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
@@ -1361,15 +1361,15 @@
 		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -1379,20 +1379,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -1406,9 +1406,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_1"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -1419,23 +1419,23 @@
 //=================================================================================
 // Creeps: Tempest Tower 3 MID
 //=================================================================================
-	"npc_dota_custom1_tower3_mid"
+						"npc_dota_custom1_tower3_mid"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
 		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower45"
-		"MinimapIconSize"			"320"
+		"MinimapIcon"					"minimap_tower45"
+		"MinimapIconSize"				"320"
 		"Level"						"3"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
+		"Ability2"					"tower_protection"			// Ability 2.
+		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -1444,25 +1444,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"122"		// Damage range min.
 		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -1472,20 +1472,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -1499,9 +1499,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_1"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"			"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -1527,8 +1527,8 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
+		"Ability2"					"tower_protection"			// Ability 2.
+		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -1537,25 +1537,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"122"		// Damage range min.
 		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -1565,20 +1565,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -1592,9 +1592,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_1"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -1605,23 +1605,23 @@
 //=================================================================================
 // Creeps: Tempest Tower 4
 //=================================================================================
-	"npc_dota_custom1_tower4"
+					"npc_dota_custom1_tower4"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
 		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower45"
-		"MinimapIconSize"			"320"
+		"MinimapIcon"					"minimap_tower45"
+		"MinimapIconSize"				"320"
 		"Level"						"4"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
+		"Ability2"					"tower_protection"			// Ability 2.
+		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -1630,25 +1630,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"30"		// Physical protection.
+		"ArmorPhysical"					"30"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"122"		// Damage range min.
 		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -1658,20 +1658,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -1685,9 +1685,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_1"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -1698,7 +1698,7 @@
 //=================================================================================
 // Creeps: Tempest Guys Filler
 //=================================================================================
-	"npc_dota_custom1_fillers"
+					"npc_dota_custom1_fillers"
 	{
 		// General
 		//
@@ -3315,22 +3315,22 @@
 //=================================================================================
 // Creeps: Kanik Tower 1 TOP
 //=================================================================================
-	"npc_dota_custom2_tower1_top"
+					"npc_dota_custom2_tower1_top"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
-		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"SoundSet"					"Tower.Water"					// Name of sound set.
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"1"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					""			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability1"					"tower_protection"			// Ability 1.
+		"Ability2"					"true_sight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -3340,25 +3340,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"20"		// Physical protection.
+		"ArmorPhysical"					"20"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"100"		// Damage range min.
 		"AttackDamageMax"			"120"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"1"			// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
-		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
+		"ProjectileModel"			"ranged_tower_good"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -3368,20 +3368,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -3395,9 +3395,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_2"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -3408,22 +3408,22 @@
 //=================================================================================
 // Creeps: Kanik Tower 1 MID
 //=================================================================================
-	"npc_dota_custom2_tower1_mid"
+				"npc_dota_custom2_tower1_mid"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
-		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower45"
-		"MinimapIconSize"			"320"
+		"SoundSet"					"Tower.Water"					// Name of sound set.
+		"MinimapIcon"					"minimap_tower45"
+		"MinimapIconSize"				"320"
 		"Level"						"1"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					""			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability1"					"tower_protection"			// Ability 1.
+		"Ability2"					"true_sight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -3433,25 +3433,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"20"		// Physical protection.
+		"ArmorPhysical"					"20"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"100"		// Damage range min.
 		"AttackDamageMax"			"120"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"1"			// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
-		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
+		"ProjectileModel"			"ranged_tower_good"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -3461,20 +3461,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -3488,9 +3488,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_2"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -3500,22 +3500,22 @@
 //=================================================================================
 // Creeps: Kanik Tower 1 BOT
 //=================================================================================
-	"npc_dota_custom2_tower1_bot"
+						"npc_dota_custom2_tower1_bot"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
-		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"SoundSet"					"Tower.Water"					// Name of sound set.
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"1"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					""			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability1"					"tower_protection"			// Ability 1.
+		"Ability2"					"true_sight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -3525,25 +3525,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"20"		// Physical protection.
+		"ArmorPhysical"					"20"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"100"		// Damage range min.
 		"AttackDamageMax"			"120"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"1"			// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
-		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
+		"ProjectileModel"			"ranged_tower_good"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -3553,20 +3553,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -3580,9 +3580,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_2"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -3593,23 +3593,23 @@
 //=================================================================================
 // Creeps: Kanik Tower 2 TOP
 //=================================================================================
-	"npc_dota_custom2_tower2_top"
+						"npc_dota_custom2_tower2_top"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
-		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"SoundSet"					"Tower.Water"					// Name of sound set.
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"2"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
+		"Ability2"					"tower_protection"			// Ability 2.
+		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -3618,25 +3618,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"120"		// Damage range min.
 		"AttackDamageMax"			"140"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
-		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
+		"ProjectileModel"			"ranged_tower_good"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -3646,20 +3646,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -3673,9 +3673,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_2"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -3686,23 +3686,23 @@
 //=================================================================================
 // Creeps: Kanik Tower 2 MID
 //=================================================================================
-	"npc_dota_custom2_tower2_mid"
+						"npc_dota_custom2_tower2_mid"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
-		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower45"
-		"MinimapIconSize"			"320"
+		"SoundSet"					"Tower.Water"					// Name of sound set.
+		"MinimapIcon"					"minimap_tower45"
+		"MinimapIconSize"				"320"
 		"Level"						"2"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
+		"Ability2"					"tower_protection"			// Ability 2.
+		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -3711,25 +3711,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"120"		// Damage range min.
 		"AttackDamageMax"			"140"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
-		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
+		"ProjectileModel"			"ranged_tower_good"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -3739,20 +3739,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -3766,9 +3766,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_2"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -3779,23 +3779,23 @@
 //=================================================================================
 // Creeps: Kanik Tower 2 BOT
 //=================================================================================
-	"npc_dota_custom2_tower2_bot"
+						"npc_dota_custom2_tower2_bot"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
-		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"SoundSet"					"Tower.Water"					// Name of sound set.
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"2"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
+		"Ability2"					"tower_protection"			// Ability 2.
+		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -3804,25 +3804,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"120"		// Damage range min.
 		"AttackDamageMax"			"140"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
-		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
+		"ProjectileModel"			"ranged_tower_good"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -3832,20 +3832,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -3859,9 +3859,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_2"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -3872,23 +3872,23 @@
 //=================================================================================
 // Creeps: Kanik Tower 3 TOP
 //=================================================================================
-	"npc_dota_custom2_tower3_top"
+						"npc_dota_custom2_tower3_top"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
-		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"SoundSet"					"Tower.Water"					// Name of sound set.
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"3"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
+		"Ability2"					"tower_protection"			// Ability 2.
+		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -3897,25 +3897,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"122"		// Damage range min.
 		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
-		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
+		"ProjectileModel"			"ranged_tower_good"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -3925,20 +3925,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -3952,9 +3952,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_2"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -3965,23 +3965,23 @@
 //=================================================================================
 // Creeps: Kanik Tower 3 MID
 //=================================================================================
-	"npc_dota_custom2_tower3_mid"
+						"npc_dota_custom2_tower3_mid"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
-		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower45"
-		"MinimapIconSize"			"320"
+		"SoundSet"					"Tower.Water"					// Name of sound set.
+		"MinimapIcon"					"minimap_tower45"
+		"MinimapIconSize"				"320"
 		"Level"						"3"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
+		"Ability2"					"tower_protection"			// Ability 2.
+		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -3990,25 +3990,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"122"		// Damage range min.
 		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
-		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
+		"ProjectileModel"			"ranged_tower_good"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -4018,20 +4018,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -4045,9 +4045,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_2"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -4058,23 +4058,23 @@
 //=================================================================================
 // Creeps: Kanik Tower 3 BOT
 //=================================================================================
-	"npc_dota_custom2_tower3_bot"
+						"npc_dota_custom2_tower3_bot"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
-		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"SoundSet"					"Tower.Water"					// Name of sound set.
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"3"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
+		"Ability2"					"tower_protection"			// Ability 2.
+		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -4083,25 +4083,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"122"		// Damage range min.
 		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
-		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
+		"ProjectileModel"			"ranged_tower_good"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -4111,20 +4111,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -4138,9 +4138,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_2"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -4151,23 +4151,23 @@
 //=================================================================================
 // Creeps: Kanik Tower 4
 //=================================================================================
-	"npc_dota_custom2_tower4"
+				"npc_dota_custom2_tower4"
 	{
 		// General
 		//
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
-		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower45"
-		"MinimapIconSize"			"320"
+		"SoundSet"					"Tower.Water"					// Name of sound set.
+		"MinimapIcon"					"minimap_tower45"
+		"MinimapIconSize"				"320"
 		"Level"						"4"
 		
 		// Abilities
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
-		"Ability2"					""			// Ability 2.
-		"Ability3"					""			// Ability 3.
+		"Ability2"					"tower_protection"			// Ability 2.
+		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -4176,25 +4176,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"30"		// Physical protection.
+		"ArmorPhysical"					"30"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"122"		// Damage range min.
 		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
-		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
+		"ProjectileModel"			"ranged_tower_good"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -4204,20 +4204,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -4231,9 +4231,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_CUSTOM_2"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
