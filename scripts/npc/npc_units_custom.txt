@@ -6373,8 +6373,8 @@
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower_good.mdl"// Model.
 		"SoundSet"					"Tower.Water"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"1"
 		
 		// Abilities
@@ -6391,18 +6391,18 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"20"		// Physical protection.
+		"ArmorPhysical"					"20"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"100"		// Damage range min.
 		"AttackDamageMax"			"120"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"1"			// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_good"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
@@ -6419,20 +6419,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"130"
 		"HealthBarOffset"			"260"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -6446,9 +6446,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -6512,14 +6512,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"	"144"
 		"RingRadius"				"130"
 		"HealthBarOffset"			"260"
 
@@ -6605,20 +6605,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"	"144"
 		"RingRadius"				"130"
 		"HealthBarOffset"			"260"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -6634,7 +6634,7 @@
 		"TeamName"					""			// Team name.
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"UnitRelationshipClass"			"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -6698,14 +6698,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"130"
 		"HealthBarOffset"			"260"
 
@@ -6791,14 +6791,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"130"
 		"HealthBarOffset"			"260"
 
@@ -6885,14 +6885,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"	"144"
 		"RingRadius"				"130"
 		"HealthBarOffset"			"260"
 
@@ -6979,14 +6979,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"	"144"
 		"RingRadius"				"130"
 		"HealthBarOffset"			"260"
 
@@ -7071,14 +7071,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"	"144"
 		"RingRadius"				"130"
 		"HealthBarOffset"			"260"
 
@@ -7164,9 +7164,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -7258,14 +7258,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"	"144"
 		"RingRadius"				"130"
 		"HealthBarOffset"			"260"
 
@@ -7351,14 +7351,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
@@ -7444,14 +7444,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"	"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
@@ -7536,14 +7536,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"	"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
@@ -7583,8 +7583,8 @@
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
 		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"2"
 		
 		// Abilities
@@ -7601,25 +7601,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"120"		// Damage range min.
 		"AttackDamageMax"			"140"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -7629,14 +7629,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
@@ -7656,9 +7656,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -7676,8 +7676,8 @@
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
 		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower45"
-		"MinimapIconSize"			"320"
+		"MinimapIcon"					"minimap_tower45"
+		"MinimapIconSize"				"320"
 		"Level"						"2"
 		
 		// Abilities
@@ -7704,15 +7704,15 @@
 		"AttackDamageMax"			"140"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -7722,14 +7722,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
@@ -7749,9 +7749,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -7769,8 +7769,8 @@
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
 		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"2"
 		
 		// Abilities
@@ -7787,25 +7787,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"120"		// Damage range min.
 		"AttackDamageMax"			"140"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -7815,20 +7815,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -7842,9 +7842,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -7880,7 +7880,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
@@ -7890,8 +7890,8 @@
 		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
@@ -7908,14 +7908,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
@@ -7973,7 +7973,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
@@ -7983,15 +7983,15 @@
 		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -8001,20 +8001,20 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
 		"MovementSpeed"				"0"			// Speed
 		"MovementTurnRate"			"1.0"			// Turning rate.
 
@@ -8028,9 +8028,9 @@
 		// Team
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"			// Team name.
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"CombatClassAttack"				"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"				"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"				"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -8048,8 +8048,8 @@
 		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
 		"SoundSet"					"Tower.Fire"					// Name of sound set.
-		"MinimapIcon"				"minimap_tower90"
-		"MinimapIconSize"			"320"
+		"MinimapIcon"					"minimap_tower90"
+		"MinimapIconSize"				"320"
 		"Level"						"3"
 		
 		// Abilities
@@ -8066,25 +8066,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"		// Physical protection.
+		"ArmorPhysical"					"22"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"122"		// Damage range min.
 		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -8094,14 +8094,14 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
-		"ProjectileCollisionSize"	"50"
+		"ProjectileCollisionSize"		"144"
 		"RingRadius"				"120"
 		"HealthBarOffset"			"280"
 
@@ -8159,25 +8159,25 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"30"		// Physical protection.
+		"ArmorPhysical"					"30"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"122"		// Damage range min.
 		"AttackDamageMax"			"182"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0.95"		// Speed of attack.
-		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_tower_bad"		// Particle system model for projectile.
 		"ProjectileSpeed"			"750"		// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -8187,9 +8187,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"250"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
