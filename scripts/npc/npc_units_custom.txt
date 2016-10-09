@@ -125,9 +125,9 @@
 		"BaseClass"					"npc_dota_thinker"	// Class of entity of link to.
 		"Model"						"models/development/invisiblebox.mdl"	// Model.
 		"SoundSet"					"0"					// Name of sound set.
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
-		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
-		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"MovementCapabilities"				"DOTA_UNIT_CAP_MOVE_NONE"
+		"AttackCapabilities"				"DOTA_UNIT_CAP_NO_ATTACK"
+		"BoundsHullName"				"DOTA_HULL_SIZE_HERO"
 		"VisionDaytimeRange"		"0"		// Range of vision during day light.
 		"VisionNighttimeRange"		"0"		// Range of vision at night time.
 	}
@@ -152,61 +152,7 @@
 		"MovementTurnRate"			"1.0"		// Turning rate.
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 //=================================================================================
 // Creeps: Tempest Ranged
@@ -235,18 +181,18 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"0"			// Physical protection.
+		"ArmorPhysical"					"0"			// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"21"		// Damage range min.
 		"AttackDamageMax"			"26"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"1"			// Speed of attack.
-		"AttackAnimationPoint"		"0.5"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0.5"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"800"		// Range within a target can be acquired.
 		"AttackRange"				"500"		// Range within a target can be attacked.
 		"ProjectileModel"			"ranged_badguy" // Particle system model for projectile.
 		"ProjectileSpeed"			"900"		// Speed of projectile.
@@ -1813,7 +1759,7 @@
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"				"15"		// Physical protection.
-		"MagicalResistance"				"0"			// Magical protection.
+		"MagicalResistance"			"0"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
@@ -1841,8 +1787,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"0"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -1932,8 +1878,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"0"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -2021,8 +1967,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"0"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -2111,8 +2057,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"0"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -2201,8 +2147,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"0"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -2291,8 +2237,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"0"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -4251,7 +4197,7 @@
 		"BaseClass"					"npc_dota_building"	// Class of entity of link to.
 		"Model"						"models/buildings/building_plain_reference.mdl"	// Model.
 		"SoundSet"					"Creep_Good_Melee"					// Name of sound set.
-		"MinimapIcon"				"minimap_miscbuilding"
+		"MinimapIcon"					"minimap_miscbuilding"
 		
 		// Abilities
 		//----------------------------------------------------------------
@@ -4267,7 +4213,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"10"			// Physical protection.
+		"ArmorPhysical"					"10"			// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
@@ -4341,8 +4287,8 @@
 		"BaseClass"					"npc_dota_building"	// Class of entity of link to.
 		"Model"						"models/buildings/building_racks_melee_reference.mdl"	// Model.
 		"SoundSet"					"Creep_Good_Melee"					// Name of sound set.
-		"MinimapIcon"				"minimap_racks90"
-		"HealthBarOffset"			"250"
+		"MinimapIcon"					"minimap_racks90"
+		"HealthBarOffset"				"250"
 		
 		// Abilities
 		//----------------------------------------------------------------
@@ -4358,7 +4304,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"15"		// Physical protection.
+		"ArmorPhysical"					"15"		// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
@@ -4368,15 +4314,15 @@
 		"AttackDamageMax"			"0"			// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"0"			// Speed of attack.
-		"AttackAnimationPoint"		"0"			// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"0"			// Range within a target can be acquired.
+		"AttackAnimationPoint"			"0"			// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"		"0"			// Range within a target can be acquired.
 		"AttackRange"				"0"			// Range within a target can be attacked.
 		"ProjectileModel"			""			// Particle system model for projectile.
 		"ProjectileSpeed"			"0"			// Speed of projectile.
 
 		// Attributes
 		//----------------------------------------------------------------
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
 		"AttributeBaseIntelligence"	"0"			// Base intelligence
@@ -4386,9 +4332,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"0"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyXP"				"0"		// Experience earn.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -4478,8 +4424,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"0"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -4567,8 +4513,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"0"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -4657,8 +4603,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"0"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -4747,8 +4693,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"0"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -4837,8 +4783,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"0"		// Experience earn.
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -4928,8 +4874,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"0"			// Experience earn.
-		"BountyGoldMin"				"0"			// Gold earned min.
-		"BountyGoldMax"				"0"			// Gold earned max.
+		"BountyGoldMin"				"100"			// Gold earned min.
+		"BountyGoldMax"				"150"			// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
