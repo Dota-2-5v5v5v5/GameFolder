@@ -1,6 +1,6 @@
 "DOTAHeroes"
 {
-  "npc_dota_hero_ancient_apparition_Trials"
+  "npc_dota_hero_ancient_apparition_tor"
   {
     "AbilityLayout"     "6"
     "override_hero"     "npc_dota_hero_ancient_apparition"
@@ -41,14 +41,14 @@
     "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
     "VisionNighttimeRange"    "1800"                  // Range of vision at night time.
   }
-    "npc_dota_hero_pudge_Trials"
+    "npc_dota_hero_pudge_tor"
   {
     "AbilityLayout"     "4"
     "override_hero"     "npc_dota_hero_pudge"
     "SoundSet"          "0" 
     "Ability3"        "pudge_flesh_heap_lua" 
     }
-        "npc_dota_hero_silencer_Trials"
+        "npc_dota_hero_silencer_tor"
   {
     "AbilityLayout"     "4"
     "override_hero"     "npc_dota_hero_silencer"
@@ -57,7 +57,7 @@
     }
 <<<<<<< Updated upstream
 =======
-            "npc_dota_hero_bloodseeker_Trials"
+            "npc_dota_hero_bloodseeker_tor"
   {
     "AbilityLayout"     "4"
     "override_hero"     "npc_dota_hero_bloodseeker"
