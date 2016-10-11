@@ -48,4 +48,11 @@
     "SoundSet"          "0" 
     "Ability3"        "pudge_flesh_heap_lua" 
     }
+        "npc_dota_hero_silencer_Trials"
+  {
+    "AbilityLayout"     "4"
+    "override_hero"     "npc_dota_hero_silencer"
+    "SoundSet"          "0" 
+    "Ability2"        "silencer_glaives_of_wisdom_datadriven" 
+    }
 }
