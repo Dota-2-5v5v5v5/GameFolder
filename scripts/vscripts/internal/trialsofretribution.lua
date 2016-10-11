@@ -182,7 +182,7 @@ function Trialsofretribution:_CaptureTrialsofretribution()
     mode:SetLoseGoldOnDeath( LOSE_GOLD_ON_DEATH )
     mode:SetMaximumAttackSpeed( MAXIMUM_ATTACK_SPEED )
     mode:SetMinimumAttackSpeed( MINIMUM_ATTACK_SPEED )
-    mode:SetStashPurchasingDisabled ( DISABLE_STASH_PURCHASING )
+    mode:SetStashPurchasingEnabled ( ENABLE_STASH_PURCHASING )
 
     for rune, spawn in pairs(ENABLED_RUNES) do
       mode:SetRuneEnabled(rune, spawn)
