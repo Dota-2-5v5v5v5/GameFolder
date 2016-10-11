@@ -1,26 +1,11 @@
 "DOTAHeroes"
 {
-  "npc_dota_hero_ancient_apparition_trialsofretribution"
+  "npc_dota_hero_ancient_apparition_Trials"
   {
     "AbilityLayout"     "6"
     "override_hero"     "npc_dota_hero_ancient_apparition"
     "SoundSet"          "0" 
-    "Ability1"        "example_ability" 
-    "Ability2"        "trialsofretribution_empty2" 
-    "Ability3"        "trialsofretribution_empty3" 
-    "Ability4"        "trialsofretribution_empty4"
-    "Ability5"        "trialsofretribution_empty5"
-    "Ability6"        "trialsofretribution_empty6"
-    "Ability7"        ""
-    "Ability8"        ""
-    "Ability9"        ""
-    "Ability10"       ""
-    "Ability11"       ""
-    "Ability12"       ""
-    "Ability13"       ""
-    "Ability14"       ""
-    "Ability15"       ""
-    "Ability16"       ""
+
 
     "ArmorPhysical"       "0"                 // Physical protection.
     "MagicalResistance"       "0"                 // Magical protection (percentage).
@@ -56,4 +41,11 @@
     "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
     "VisionNighttimeRange"    "1800"                  // Range of vision at night time.
   }
+    "npc_dota_hero_pudge_Trials"
+  {
+    "AbilityLayout"     "4"
+    "override_hero"     "npc_dota_hero_pudge"
+    "SoundSet"          "0" 
+    "Ability3"        "pudge_flesh_heap_lua" 
+    }
 }
