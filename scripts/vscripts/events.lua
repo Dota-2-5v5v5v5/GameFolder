@@ -215,11 +215,11 @@ function Trialsofretribution:OnTeamKillCredit(keys)
   local killerTeamNumber = keys.teamnumber
 end
 
+
 -- An entity died
 function Trialsofretribution:_OnEntityKilled( keys )
   DebugPrint( '[TRIALSOFRETRIBUTION] OnEntityKilled Called' )
   DebugPrintTable( keys )
-  
 
   -- The Unit that was Killed
   local killedUnit = EntIndexToHScript( keys.entindex_killed )
@@ -238,8 +238,64 @@ function Trialsofretribution:_OnEntityKilled( keys )
   end
 
   local damagebits = keys.damagebits -- This might always be 0 and therefore useless
+  if killedUnit:IsFort() then
+    --TODO: Uncomment this when bugfixing OnFortKilled
+   -- Trialsofretribution:OnFortKilled( keys )
+  end
 
   -- Put code here to handle when an entity gets killed
+end
+
+function Trialsofretribution:OnFortKilled( keys )
+  local killedUnit = EntIndexToHScript( keys.entindex_killed )
+  local killedTeam = killedUnit.GetTeam()
+
+  local all_units = Entities:FindAllInSphere(Vector(0,0,0), 12000.0)
+  local remainingFort
+  local fortCount = 0
+  local players = {}
+
+  --Destroy all units from team that lost, find all players on that team
+  for number,entity in pairs(all_units) do
+
+    if entity:GetTeam() == killedTeam then
+      --print("number", number, "entity", entity:GetName())
+      if entity ~= killedUnit then
+        --print("removing unit..", entity:GetName())
+        entity:RemoveSelf()
+        --Record all the players on the killed team
+        if entity.IsHero() then
+          local contains = false
+          for _, value in pairs(players) do
+            if value == entity.GetPlayerId() then
+              contains = true
+            end
+          end
+          if contains == false then
+            table.insert(players, entity.GetPlayerId())
+          end
+        end
+      end
+    end
+    if IsValidEntity(entity) and entity ~= killedUnit and entity.isFort() then
+      fortCount = fortCount + 1
+      remainingFort = entity
+    end
+  end
+  if fortCount == 1 then
+    GameRules:SetGameWinner(remainingFort.GetTeam())
+    GameRules:SetSafeToLeave(true)
+    GameRules:Defeated()
+  end
+
+  --puts all the players on the lost team on custom team 3
+  for _, player in pairs(players) do
+    PlayerResource:SetCustomTeamAssignment( player.GetPlayerId(), DOTA_TEAM_CUSTOM_3 )
+  end
+
+
+  --todo: make custom 3 spectator like
+
 end
 
 
@@ -332,7 +388,22 @@ end
 function Trialsofretribution:OnPlayerChat(keys)
   local teamonly = keys.teamonly
   local userID = keys.userid
-  local playerID = self.vUserIds[userID]:GetPlayerID()
+  --TODO: Fix, This line was throwing a null value error so I commented it out for now
+  --local playerID = self.vUserIds[userID]:GetPlayerID()
 
   local text = keys.text
+end
+
+function printTable(t)
+
+  function printTableHelper(t, spacing)
+    for k,v in pairs(t) do
+      print(spacing..tostring(k), v)
+      if (type(v) == "table") then
+        printTableHelper(v, spacing.."\t")
+      end
+    end
+  end
+
+  printTableHelper(t, "");
 end
