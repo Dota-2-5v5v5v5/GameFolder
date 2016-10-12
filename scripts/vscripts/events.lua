@@ -242,8 +242,7 @@ function Trialsofretribution:_OnEntityKilled( keys )
     Trialsofretribution:OnFortKilled( keys )
   end
 
-  -- Put code here to handle when an entity gets killed
-end
+
 
 function Trialsofretribution:OnFortKilled( keys )
   local killedUnit = EntIndexToHScript( keys.entindex_killed )
@@ -390,7 +389,7 @@ end
 function Trialsofretribution:OnPlayerChat(keys)
   local teamonly = keys.teamonly
   local userID = keys.userid
-  local playerID = self.vUserIds[userID]:GetPlayerID()
+  local playerID = self.UserIds[userID]:GetPlayerID()
 
   local text = keys.text
 end
