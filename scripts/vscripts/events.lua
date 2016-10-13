@@ -240,7 +240,7 @@ function Trialsofretribution:_OnEntityKilled( keys )
   local damagebits = keys.damagebits -- This might always be 0 and therefore useless
   if killedUnit:IsFort() then
     --TODO: Uncomment this when bugfixing OnFortKilled
-   -- Trialsofretribution:OnFortKilled( keys )
+    Trialsofretribution:OnFortKilled( keys )
   end
 
   -- Put code here to handle when an entity gets killed
@@ -258,10 +258,11 @@ function Trialsofretribution:OnFortKilled( keys )
   --Destroy all units from team that lost, find all players on that team
   for number,entity in pairs(all_units) do
 
+
     if entity:GetTeamNumber() == killedTeam then
       --print("number", number, "entity", entity:GetName())
       if entity ~= killedUnit then
-        --print("removing unit..", entity:GetName())
+        print("removing unit..", entity:GetName())
         entity:RemoveSelf()
         --Record all the players on the killed team
         if entity.IsHero() then
