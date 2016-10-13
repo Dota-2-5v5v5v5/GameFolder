@@ -248,7 +248,7 @@ end
 
 function Trialsofretribution:OnFortKilled( keys )
   local killedUnit = EntIndexToHScript( keys.entindex_killed )
-  local killedTeam = killedUnit.GetTeam()
+  local killedTeam = killedUnit.GetTeamNumber()
 
   local all_units = Entities:FindAllInSphere(Vector(0,0,0), 12000.0)
   local remainingFort
@@ -258,7 +258,7 @@ function Trialsofretribution:OnFortKilled( keys )
   --Destroy all units from team that lost, find all players on that team
   for number,entity in pairs(all_units) do
 
-    if entity:GetTeam() == killedTeam then
+    if entity:GetTeamNumber() == killedTeam then
       --print("number", number, "entity", entity:GetName())
       if entity ~= killedUnit then
         --print("removing unit..", entity:GetName())
@@ -277,13 +277,13 @@ function Trialsofretribution:OnFortKilled( keys )
         end
       end
     end
-    if IsValidEntity(entity) and entity ~= killedUnit and entity.isFort() then
+    if IsValidEntity(entity) and entity ~= killedUnit and entity.IsFort() then
       fortCount = fortCount + 1
       remainingFort = entity
     end
   end
   if fortCount == 1 then
-    GameRules:SetGameWinner(remainingFort.GetTeam())
+    GameRules:SetGameWinner(remainingFort.GetTeamNumber())
     GameRules:SetSafeToLeave(true)
     GameRules:Defeated()
   end
