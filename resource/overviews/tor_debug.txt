@@ -1,0 +1,8 @@
+tor_debug
+{
+	material materials/overviews/tor_debug.vmat
+	pos_x -10240
+	pos_y 10240
+	scale 20.000
+}
+
