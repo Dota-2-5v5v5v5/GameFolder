@@ -6,7 +6,7 @@
 	"NoTeam"          								"No Team"
 
 	"DOTA_Custom1"    								"Tempest"
-	"DOTA_Custom2"    								"Kanik"
+	"DOTA_Custom2"    								"Altiar"
 	"DOTA_Custom3"    								"Radiant"
 	"DOTA_Custom4"    								"Dire"
 	"DOTA_Custom5"    								"Brown Rat"

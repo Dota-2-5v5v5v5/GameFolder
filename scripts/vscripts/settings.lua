@@ -5,8 +5,8 @@ ENABLE_HERO_RESPAWN = true              -- Should the heroes automatically respa
 UNIVERSAL_SHOP_MODE = false             -- Should the main shop contain Secret Shop items as well as regular items
 ALLOW_SAME_HERO_SELECTION = false        -- Should we let people select the same hero as each other
 
-HERO_SELECTION_TIME = 30.0              -- How long should we let people select their hero?
-PRE_GAME_TIME = 30.0                    -- How long after people select their heroes should the horn blow and the game start?
+HERO_SELECTION_TIME = 60.0              -- How long should we let people select their hero?
+PRE_GAME_TIME = 90.0                    -- How long after people select their heroes should the horn blow and the game start?
 POST_GAME_TIME = 30.0                  -- How long should we let people look at the scoreboard before closing the server automatically?
 TREE_REGROW_TIME = 60.0                 -- How long should it take individual trees to respawn after being cut down/destroyed?
 
@@ -16,9 +16,9 @@ GOLD_TICK_TIME = 1                      -- How long should we wait in seconds be
 RECOMMENDED_BUILDS_DISABLED = false     -- Should we disable the recommened builds for heroes
 CAMERA_DISTANCE_OVERRIDE = -1           -- How far out should we allow the camera to go?  Use -1 for the default (1134) while still allowing for panorama camera distance changes
 
-MINIMAP_ICON_SIZE = 1                   -- What icon size should we use for our heroes?
-MINIMAP_CREEP_ICON_SIZE = 1             -- What icon size should we use for creeps?
-MINIMAP_RUNE_ICON_SIZE = 1              -- What icon size should we use for runes?
+MINIMAP_ICON_SIZE = .75                   -- What icon size should we use for our heroes?
+MINIMAP_CREEP_ICON_SIZE = .75             -- What icon size should we use for creeps?
+MINIMAP_RUNE_ICON_SIZE = .75              -- What icon size should we use for runes?
 
 RUNE_SPAWN_TIME = 120                   -- How long in seconds should we wait between rune spawns?
 CUSTOM_BUYBACK_COST_ENABLED = false      -- Should we use a custom buyback cost setting?
@@ -67,7 +67,7 @@ FOUNTAIN_PERCENTAGE_HEALTH_REGEN = -1   -- What should we use for the percentage
 MAXIMUM_ATTACK_SPEED = 600              -- What should we use for the maximum attack speed?
 MINIMUM_ATTACK_SPEED = 20
 
-GAME_END_DELAY = -1                     -- How long should we wait after the game winner is set to display the victory banner and End Screen?  Use -1 to keep the default (about 10 seconds)
+GAME_END_DELAY = 10                     -- How long should we wait after the game winner is set to display the victory banner and End Screen?  Use -1 to keep the default (about 10 seconds)
 VICTORY_MESSAGE_DURATION = 5            -- How long should we wait after the victory message displays to show the End Screen?  Use 
 STARTING_GOLD = 625                     -- How much starting gold should we give to each player?
 DISABLE_DAY_NIGHT_CYCLE = false         -- Should we disable the day night cycle from naturally occurring? (Manual adjustment still possible)
@@ -95,12 +95,12 @@ USE_CUSTOM_TEAM_COLORS = true           -- Should we use custom team colors?
 USE_CUSTOM_TEAM_COLORS_FOR_PLAYERS = true          -- Should we use custom team colors to color the players/minimap?
 
 TEAM_COLORS = {}                        -- If USE_CUSTOM_TEAM_COLORS is set, use these colors.
-TEAM_COLORS[DOTA_TEAM_GOODGUYS] = { 0, 255, 128 }  --    Teal
+TEAM_COLORS[DOTA_TEAM_GOODGUYS] = { 0, 255, 128 }   --    Teal
 TEAM_COLORS[DOTA_TEAM_BADGUYS]  = { 255, 0, 128 }   --    Yellow
-TEAM_COLORS[DOTA_TEAM_CUSTOM_1] = { 255, 255, 0 }  --    Pink
+TEAM_COLORS[DOTA_TEAM_CUSTOM_1] = { 255, 255, 0 }   --    Pink
 TEAM_COLORS[DOTA_TEAM_CUSTOM_2] = { 0, 128, 255 }   --    Orange
-TEAM_COLORS[DOTA_TEAM_CUSTOM_3] = { 52, 85, 255 }   --    Blue
-TEAM_COLORS[DOTA_TEAM_CUSTOM_4] = { 101, 212, 19 }  --    Green
+TEAM_COLORS[DOTA_TEAM_CUSTOM_3] = { 0, 255, 128 }   --    Blue
+TEAM_COLORS[DOTA_TEAM_CUSTOM_4] = { 255, 0, 128 }   --    Green
 TEAM_COLORS[DOTA_TEAM_CUSTOM_5] = { 129, 83, 54 }   --    Brown
 TEAM_COLORS[DOTA_TEAM_CUSTOM_6] = { 27, 192, 216 }  --    Cyan
 TEAM_COLORS[DOTA_TEAM_CUSTOM_7] = { 199, 228, 13 }  --    Olive
