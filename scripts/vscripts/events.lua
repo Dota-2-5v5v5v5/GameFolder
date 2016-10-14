@@ -248,7 +248,7 @@ end
 
 function Trialsofretribution:OnFortKilled( keys )
   local killedUnit = EntIndexToHScript( keys.entindex_killed )
-  local killedTeam = killedUnit.GetTeamNumber()
+  local killedTeam = killedUnit:GetTeamNumber()
 
   local all_units = Entities:FindAllInSphere(Vector(0,0,0), 12000.0)
   local remainingFort
@@ -258,27 +258,26 @@ function Trialsofretribution:OnFortKilled( keys )
   --Destroy all units from team that lost, find all players on that team
   for number,entity in pairs(all_units) do
 
-
     if entity:GetTeamNumber() == killedTeam then
       --print("number", number, "entity", entity:GetName())
       if entity ~= killedUnit then
-        print("removing unit..", entity:GetName())
-        entity:RemoveSelf()
         --Record all the players on the killed team
-        if entity.IsHero() then
+        if entity:IsHero() then
           local contains = false
           for _, value in pairs(players) do
-            if value == entity.GetPlayerId() then
+            if value == entity:GetPlayerId() then
               contains = true
             end
           end
           if contains == false then
-            table.insert(players, entity.GetPlayerId())
+            table.insert(players, entity:GetPlayerId())
           end
         end
+        print("removing unit..", entity:GetName())
+        entity:RemoveSelf()
       end
     end
-    if IsValidEntity(entity) and entity ~= killedUnit and entity.IsFort() then
+    if IsValidEntity(entity) and entity ~= killedUnit and isAncient(entity) then
       fortCount = fortCount + 1
       remainingFort = entity
     end
@@ -291,7 +290,7 @@ function Trialsofretribution:OnFortKilled( keys )
 
   --puts all the players on the lost team on custom team 3
   for _, player in pairs(players) do
-    PlayerResource:SetCustomTeamAssignment( player.GetPlayerId(), DOTA_TEAM_CUSTOM_3 )
+    PlayerResource:SetCustomTeamAssignment( player:GetPlayerId(), DOTA_TEAM_CUSTOM_3 )
   end
 
 
@@ -299,6 +298,10 @@ function Trialsofretribution:OnFortKilled( keys )
 
 end
 
+function isAncient(entity)
+  local name = entity:GetName()
+  return name == "tempestancient" or name == "kanikancient" or name == "radiantancient" or name == "direancient"
+end
 
 
 -- This function is called 1 to 2 times as the player connects initially but before they 
