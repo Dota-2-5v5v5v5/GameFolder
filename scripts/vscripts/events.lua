@@ -283,7 +283,7 @@ function Trialsofretribution:OnFortKilled( keys )
     end
   end
   if fortCount == 1 then
-    GameRules:SetGameWinner(remainingFort.GetTeamNumber())
+    GameRules:SetGameWinner(remainingFort:GetTeamNumber())
     GameRules:SetSafeToLeave(true)
     GameRules:Defeated()
   end
