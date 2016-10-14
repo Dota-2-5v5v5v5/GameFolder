@@ -273,7 +273,7 @@ function Trialsofretribution:OnFortKilled( keys )
             table.insert(players, entity:GetPlayerId())
           end
         end
-        print("removing unit..", entity:GetName())
+        --print("removing unit..", entity:GetName())
         entity:RemoveSelf()
       end
     end
@@ -283,7 +283,7 @@ function Trialsofretribution:OnFortKilled( keys )
     end
   end
   if fortCount == 1 then
-    GameRules:SetGameWinner(remainingFort.GetTeamNumber())
+    GameRules:SetGameWinner(remainingFort:GetTeamNumber())
     GameRules:SetSafeToLeave(true)
     GameRules:Defeated()
   end
