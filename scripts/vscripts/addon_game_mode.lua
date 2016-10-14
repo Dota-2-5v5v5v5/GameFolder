@@ -49,4 +49,5 @@ end
 function Activate()
   GameRules.Trialsofretribution = Trialsofretribution()
   GameRules.Trialsofretribution:_InitTrialsofretribution()
+  GameRules:GetGameModeEntity():SetCameraDistanceOverride(1700)
 end
