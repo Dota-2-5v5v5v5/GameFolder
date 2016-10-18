@@ -262,15 +262,16 @@ function Trialsofretribution:OnFortKilled( keys )
       --print("number", number, "entity", entity:GetName())
       if entity ~= killedUnit then
         --Record all the players on the killed team
-        if entity:IsHero() then
+        
+        if entity:IsPlayer() then
           local contains = false
           for _, value in pairs(players) do
-            if value == entity:GetPlayerId() then
+            if value == entity:GetPlayerID() then
               contains = true
             end
           end
           if contains == false then
-            table.insert(players, entity:GetPlayerId())
+            table.insert(players, entity:GetPlayerID())
           end
         end
         --print("removing unit..", entity:GetName())
@@ -290,9 +291,16 @@ function Trialsofretribution:OnFortKilled( keys )
 
   --puts all the players on the lost team on custom team 3
   for _, player in pairs(players) do
-    PlayerResource:SetCustomTeamAssignment( player:GetPlayerId(), DOTA_TEAM_CUSTOM_3 )
+  print('player')
+  print(type(player))
+  print(player)
+  print('custom team')
+  print(type(DOTA_TEAM_CUSTOM_5))
+  print(DOTA_TEAM_CUSTOM_5)
+PlayerResource:SetCustomTeamAssignment( player, DOTA_TEAM_CUSTOM_5 )
+print('moved player')
   end
-
+print('moved all players')
 
   --todo: make custom 3 spectator like
 
