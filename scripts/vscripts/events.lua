@@ -286,7 +286,7 @@ function isAncient(entity)
 end
 
 function disableRespawn(entity)
-  entity:SetRespawnsDisabled(true)
+  pcall(entity:SetRespawnsDisabled(true))
 end
 
 -- This function is called 1 to 2 times as the player connects initially but before they 
