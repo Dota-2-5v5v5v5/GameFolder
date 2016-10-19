@@ -297,7 +297,7 @@ function Trialsofretribution:OnFortKilled( keys )
   print('custom team')
   print(type(DOTA_TEAM_CUSTOM_5))
   print(DOTA_TEAM_CUSTOM_5)
-PlayerResource:SetCustomTeamAssignment( player, DOTA_TEAM_CUSTOM_5 )
+
 print('moved player')
   end
 print('moved all players')
