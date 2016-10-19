@@ -261,21 +261,8 @@ function Trialsofretribution:OnFortKilled( keys )
     if entity:GetTeamNumber() == killedTeam then
       --print("number", number, "entity", entity:GetName())
       if entity ~= killedUnit then
-        --Record all the players on the killed team
-        
-        if entity:IsPlayer() then
-          local contains = false
-          for _, value in pairs(players) do
-            if value == entity:GetPlayerID() then
-              contains = true
-            end
-          end
-          if contains == false then
-            table.insert(players, entity:GetPlayerID())
-          end
-        end
-        --print("removing unit..", entity:GetName())
-        entity:RemoveSelf()
+        pcall(disableRespawn(entity))
+        entity:Kill()
       end
     end
     if IsValidEntity(entity) and entity ~= killedUnit and isAncient(entity) then
@@ -289,19 +276,6 @@ function Trialsofretribution:OnFortKilled( keys )
     GameRules:Defeated()
   end
 
-  --puts all the players on the lost team on custom team 3
-  for _, player in pairs(players) do
-  print('player')
-  print(type(player))
-  print(player)
-  print('custom team')
-  print(type(DOTA_TEAM_CUSTOM_5))
-  print(DOTA_TEAM_CUSTOM_5)
-
-print('moved player')
-  end
-print('moved all players')
-
   --todo: make custom 3 spectator like
 
 end
@@ -311,6 +285,9 @@ function isAncient(entity)
   return name == "tempestancient" or name == "kanikancient" or name == "radiantancient" or name == "direancient"
 end
 
+function disableRespawn(entity)
+  entity:SetRespawnsDisabled(true)
+end
 
 -- This function is called 1 to 2 times as the player connects initially but before they 
 -- have completely connected
