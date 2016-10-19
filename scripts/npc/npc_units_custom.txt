@@ -1142,7 +1142,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -1235,7 +1235,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -1328,7 +1328,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -1421,7 +1421,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -1512,7 +1512,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -1603,7 +1603,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -1694,7 +1694,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -1783,7 +1783,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -1873,7 +1873,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -1963,7 +1963,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -2053,7 +2053,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -2144,7 +2144,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -3691,7 +3691,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -3784,7 +3784,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -3877,7 +3877,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -3970,7 +3970,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -4061,7 +4061,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -4152,7 +4152,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -4243,7 +4243,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -4332,7 +4332,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -4422,7 +4422,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -4512,7 +4512,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -4602,7 +4602,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -4693,7 +4693,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -6186,7 +6186,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -6279,7 +6279,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -6372,7 +6372,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -6465,7 +6465,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -6556,7 +6556,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -6647,7 +6647,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -6738,7 +6738,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -6827,7 +6827,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -6917,7 +6917,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -7007,7 +7007,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -7097,7 +7097,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -7188,7 +7188,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -7627,7 +7627,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"0"			// Physical protection.
+		"ArmorPhysical"				"-8"			// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
@@ -7906,7 +7906,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"2"			// Physical protection.
+		"ArmorPhysical"				"-6"			// Physical protection.
 		"MagicalResistance"				"0"			// Magical protection.
 
 		// Attack
@@ -8735,7 +8735,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -8828,7 +8828,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -8921,7 +8921,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -9014,7 +9014,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"true_sight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -9105,7 +9105,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -9196,7 +9196,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -9287,7 +9287,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -9376,7 +9376,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -9466,7 +9466,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -9556,7 +9556,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -9646,7 +9646,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -9737,7 +9737,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection_in_base"			// Ability 1.
+		"Ability1"					""			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
