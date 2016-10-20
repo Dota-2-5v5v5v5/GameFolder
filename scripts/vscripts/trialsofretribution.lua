@@ -169,7 +169,7 @@ function SpawnCreeps()
     
     local point = Entities:FindByName( nil, "radiantbot"):GetAbsOrigin()
 
-    local waypoint = Entities:FindByName(nil, "radiantbotloc1")
+    local waypoint = Entities:FindByName(nil, "radiantbotloc2")
     local unit = CreateUnitByName("npc_dota_creep_custom3_ranged", point, true, nil, nil, DOTA_TEAM_CUSTOM_3)
     unit:SetInitialGoalEntity( waypoint )
     local unit = CreateUnitByName("npc_dota_creep_custom3_melee", point, true, nil, nil, DOTA_TEAM_CUSTOM_3)
@@ -186,7 +186,7 @@ function SpawnCreeps()
 
     local point = Entities:FindByName( nil, "radianttop"):GetAbsOrigin()
 
-    local waypoint = Entities:FindByName(nil, "radianttoploc1")
+    local waypoint = Entities:FindByName(nil, "radianttoploc2")
     local unit = CreateUnitByName("npc_dota_creep_custom3_ranged", point, true, nil, nil, DOTA_TEAM_CUSTOM_3)
     unit:SetInitialGoalEntity( waypoint )
     local unit = CreateUnitByName("npc_dota_creep_custom3_melee", point, true, nil, nil, DOTA_TEAM_CUSTOM_3)
@@ -232,7 +232,7 @@ function SpawnCreeps()
     
     local point = Entities:FindByName( nil, "altiarbot"):GetAbsOrigin()
 
-    local waypoint = Entities:FindByName(nil, "altiarbotloc1")
+    local waypoint = Entities:FindByName(nil, "altiarbotloc2")
     local unit = CreateUnitByName("npc_dota_creep_custom3_ranged", point, true, nil, nil, DOTA_TEAM_CUSTOM_2)
     unit:SetInitialGoalEntity( waypoint )
     local unit = CreateUnitByName("npc_dota_creep_custom3_melee", point, true, nil, nil, DOTA_TEAM_CUSTOM_2)
@@ -262,7 +262,7 @@ function SpawnCreeps()
     
     local point = Entities:FindByName( nil, "diremid"):GetAbsOrigin()
 
-    local waypoint = Entities:FindByName(nil, "diremidloc1")
+    local waypoint = Entities:FindByName(nil, "diremidloc2")
     local unit = CreateUnitByName("npc_dota_creep_custom3_ranged", point, true, nil, nil, DOTA_TEAM_CUSTOM_4)
     unit:SetInitialGoalEntity( waypoint )
     local unit = CreateUnitByName("npc_dota_creep_custom3_melee", point, true, nil, nil, DOTA_TEAM_CUSTOM_4)
@@ -277,7 +277,7 @@ function SpawnCreeps()
     
     local point = Entities:FindByName( nil, "diremid"):GetAbsOrigin()
 
-    local waypoint = Entities:FindByName(nil, "diremidloc2")
+    local waypoint = Entities:FindByName(nil, "diremidloc8")
     local unit = CreateUnitByName("npc_dota_creep_custom3_ranged", point, true, nil, nil, DOTA_TEAM_CUSTOM_4)
     unit:SetInitialGoalEntity( waypoint )
     local unit = CreateUnitByName("npc_dota_creep_custom3_melee", point, true, nil, nil, DOTA_TEAM_CUSTOM_4)
@@ -369,7 +369,7 @@ function SpawnCreeps()
     
     local point = Entities:FindByName( nil, "tempesttop"):GetAbsOrigin()
 
-    local waypoint = Entities:FindByName(nil, "tempesttoploc1")
+    local waypoint = Entities:FindByName(nil, "tempesttoploc2")
     local unit = CreateUnitByName("npc_dota_creep_custom3_ranged", point, true, nil, nil, DOTA_TEAM_CUSTOM_1)
     unit:SetInitialGoalEntity( waypoint )
     local unit = CreateUnitByName("npc_dota_creep_custom3_melee", point, true, nil, nil, DOTA_TEAM_CUSTOM_1)
