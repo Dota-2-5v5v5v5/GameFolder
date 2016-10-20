@@ -2,6 +2,7 @@
 
 require('internal/util')
 require('trialsofretribution')
+require("statcollection/init")
 
 function Precache( context )
 --[[
