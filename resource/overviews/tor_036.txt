@@ -1,8 +1,0 @@
-tor_036
-{
-	material materials/overviews/tor_036.vmat
-	pos_x -10240
-	pos_y 10240
-	scale 20.000
-}
-

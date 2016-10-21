@@ -1,8 +1,0 @@
-tor_043
-{
-	material materials/overviews/tor_043.vmat
-	pos_x -10240
-	pos_y 10240
-	scale 20.000
-}
-
