@@ -10910,7 +10910,7 @@
 
 	"npc_dota_flying_courier"	 // deprecated
 	{
-		"MovementSpeed"				"440"		// Speed
+		"MovementSpeed"				"500"		// Speed
 	}
 
 	"npc_dota_witch_doctor_death_ward"
