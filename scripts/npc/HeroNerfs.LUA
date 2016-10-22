@@ -23,4 +23,7 @@
 
 "bonus_damage"				"16 24 32 40"
 "bonus_damage"				"12 18 24 30"
+5 axe_counter_helix
+"AbilityDamage"					"70 95 115 140"
+
 
