@@ -10906,7 +10906,6 @@
 	"npc_dota_courier"
 	{
 		"MovementSpeed"				"440"		// Speed
-		"Ability2"					""
 	}
 
 	"npc_dota_flying_courier"	 // deprecated
