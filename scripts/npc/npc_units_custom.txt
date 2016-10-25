@@ -75,7 +75,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -168,7 +168,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -261,7 +261,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -354,7 +354,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"400"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -447,7 +447,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -540,7 +540,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"400"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -2288,7 +2288,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -2382,7 +2382,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -2476,7 +2476,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -2624,7 +2624,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -2717,7 +2717,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -2810,7 +2810,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -2903,7 +2903,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -2996,7 +2996,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -3089,7 +3089,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -4837,7 +4837,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -4931,7 +4931,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -5025,7 +5025,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -5119,7 +5119,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -5212,7 +5212,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -5305,7 +5305,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -5398,7 +5398,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -5491,7 +5491,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -5584,7 +5584,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -7332,7 +7332,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -7426,7 +7426,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -7520,7 +7520,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -7668,7 +7668,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -7761,7 +7761,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -7854,7 +7854,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -7947,7 +7947,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -8040,7 +8040,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"400"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -8133,7 +8133,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"365"		// Speed
+		"MovementSpeed"				"375"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -9881,7 +9881,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -9975,7 +9975,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -10069,7 +10069,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"405"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -10092,1306 +10092,4 @@
 		"VisionNighttimeRange"		"850"		// Range of vision at night time.
 		
 	}	
-	
-//=================================================================================
-// Creeps: Bad Ranged
-//=================================================================================
-	"npc_dota_creep_badguys_ranged"
-	{
-		// Movement
-		//----------------------------------------------------------------
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Bad Ranged Super
-//=================================================================================
-	"npc_dota_creep_badguys_ranged_upgraded"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Bad Ranged Mega
-//=================================================================================
-	"npc_dota_creep_badguys_ranged_upgraded_mega"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Good Range 
-//=================================================================================
-	"npc_dota_creep_goodguys_ranged"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Good Range Super
-//=================================================================================
-	"npc_dota_creep_goodguys_ranged_upgraded"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Good Range Mega
-//=================================================================================
-	"npc_dota_creep_goodguys_ranged_upgraded_mega"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Bad Melee
-//=================================================================================
-	"npc_dota_creep_badguys_melee"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Bad Melee UPGRADED
-//=================================================================================
-	"npc_dota_creep_badguys_melee_upgraded"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Bad Melee Mega
-//=================================================================================
-	"npc_dota_creep_badguys_melee_upgraded_mega"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Good Melee
-//=================================================================================
-	"npc_dota_creep_goodguys_melee"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Good Melee Super
-//=================================================================================
-	"npc_dota_creep_goodguys_melee_upgraded"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}
-	
-//=================================================================================
-// Creeps: Good Melee Mega
-//=================================================================================
-	"npc_dota_creep_goodguys_melee_upgraded_mega"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}
-
-//=================================================================================
-// Creeps: Good Tower 1 TOP
-//=================================================================================
-	"npc_dota_goodguys_tower1_top"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Good Tower 1 MID
-//=================================================================================
-	"npc_dota_goodguys_tower1_mid"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Good Tower 1 BOT
-//=================================================================================
-	"npc_dota_goodguys_tower1_bot"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Good Tower 2 TOP
-//=================================================================================
-	"npc_dota_goodguys_tower2_top"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Good Tower 2 MID
-//=================================================================================
-	"npc_dota_goodguys_tower2_mid"
-	{
-	}	
-
-
-//=================================================================================
-// Creeps: Good Tower 2 BOT
-//=================================================================================
-	"npc_dota_goodguys_tower2_bot"
-	{
-	}	
-
-
-//=================================================================================
-// Creeps: Good Tower 3 TOP
-//=================================================================================
-	"npc_dota_goodguys_tower3_top"
-	{
-	}	
-//=================================================================================
-// Creeps: Good Tower 3 MID
-//=================================================================================
-	"npc_dota_goodguys_tower3_mid"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Good Tower 3 BOT
-//=================================================================================
-	"npc_dota_goodguys_tower3_bot"
-	{
-	}	
-
-
-//=================================================================================
-// Creeps: Good Tower 4
-//=================================================================================
-	"npc_dota_goodguys_tower4"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Tower 1 TOP
-//=================================================================================
-	"npc_dota_badguys_tower1_top"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Tower 1 MID
-//=================================================================================
-	"npc_dota_badguys_tower1_mid"
-	{
-	}	
-//=================================================================================
-// Creeps: Bad Tower 1 BOT
-//=================================================================================
-	"npc_dota_badguys_tower1_bot"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Tower 2 TOP
-//=================================================================================
-	"npc_dota_badguys_tower2_top"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Tower 2 MID
-//=================================================================================
-	"npc_dota_badguys_tower2_mid"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Tower 2 BOT
-//=================================================================================
-	"npc_dota_badguys_tower2_bot"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Tower 3 TOP
-//=================================================================================
-	"npc_dota_badguys_tower3_top"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Tower 3 MID
-//=================================================================================
-	"npc_dota_badguys_tower3_mid"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Tower 3 BOT
-//=================================================================================
-	"npc_dota_badguys_tower3_bot"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Tower 4
-//=================================================================================
-	"npc_dota_badguys_tower4"
-	{
-	}	
-
-
-
-//=================================================================================
-// Creeps: Bad Guys Filler
-//=================================================================================
-	"npc_dota_badguys_fillers"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Good Guys Melee Rax TOP
-//=================================================================================
-	"npc_dota_goodguys_melee_rax_top"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Good Guys Melee Rax MID
-//=================================================================================
-	"npc_dota_goodguys_melee_rax_mid"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Good Guys Melee Rax BOT
-//=================================================================================
-	"npc_dota_goodguys_melee_rax_bot"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Good Guys Range Rax TOP
-//=================================================================================
-	"npc_dota_goodguys_range_rax_top"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Good Guys Range Rax MID
-//=================================================================================
-	"npc_dota_goodguys_range_rax_mid"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Good Guys Range Rax BOT
-//=================================================================================
-	"npc_dota_goodguys_range_rax_bot"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Guys Melee Rax TOP
-//=================================================================================
-	"npc_dota_badguys_melee_rax_top"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Guys Melee Rax MID
-//=================================================================================
-	"npc_dota_badguys_melee_rax_mid"
-	{
-	}	
-//=================================================================================
-// Creeps: Bad Guys Melee Rax BOT
-//=================================================================================
-	"npc_dota_badguys_melee_rax_bot"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Guys Range Rax TOP
-//=================================================================================
-	"npc_dota_badguys_range_rax_top"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Guys Range Rax MID
-//=================================================================================
-	"npc_dota_badguys_range_rax_mid"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Guys Range Rax BOT
-//=================================================================================
-	"npc_dota_badguys_range_rax_bot"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Good Guys Fort 
-//=================================================================================
-	"npc_dota_goodguys_fort"
-	{
-	}	
-
-//=================================================================================
-// Creeps: Bad Guys Fort 
-//=================================================================================
-	"npc_dota_badguys_fort"
-	{
-	}	
-	
-//=================================================================================
-// Creeps: Good Siege
-//=================================================================================
-	"npc_dota_goodguys_siege"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Good Siege Upgraded
-//=================================================================================
-	"npc_dota_goodguys_siege_upgraded"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Good Siege Mega
-//=================================================================================
-	"npc_dota_goodguys_siege_upgraded_mega"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Bad Siege
-//=================================================================================
-	"npc_dota_badguys_siege"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Bad Siege Upgraded
-//=================================================================================
-	"npc_dota_badguys_siege_upgraded"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Bad Siege Mega
-//=================================================================================
-	"npc_dota_badguys_siege_upgraded_mega"
-	{
-		"MovementSpeed"				"405"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: DotA Fountain
-//=================================================================================
-	"dota_fountain"
-	{
-	}	
-	
-//=================================================================================
-// Creeps: Healing Ward 
-//=================================================================================
-	"npc_dota_juggernaut_healing_ward"
-	{
-		"MovementSpeed"				"525"		// Speed
-	}	
-
-//=================================================================================
-// Healing Campfire
-//=================================================================================
-	"npc_dota_healing_campfire"
-	{
-	}	
-
-//=================================================================================
-// Frozen Sigil 
-//=================================================================================
-	"npc_dota_tusk_frozen_sigil1"
-	{
-		"MovementSpeed"				"390"		// Speed
-	}
-
-	"npc_dota_tusk_frozen_sigil2"
-	{
-		"MovementSpeed"				"390"		// Speed
-	}
-
-	"npc_dota_tusk_frozen_sigil3"
-	{
-		"MovementSpeed"				"390"		// Speed
-	}
-
-	"npc_dota_tusk_frozen_sigil4"
-	{
-		"MovementSpeed"				"390"		// Speed
-	}	
-
-//=================================================================================
-// ancestral_spirit
-//=================================================================================
-	"npc_dota_elder_titan_ancestral_spirit"
-	{										
-		"MovementSpeed"				"400"			// Speed
-	}
-
-//=================================================================================
-// Neutral: Kobold
-//=================================================================================
-	"npc_dota_neutral_kobold"
-	{
-		"MovementSpeed"				"340"		// Speed.
-	}
-
-//=================================================================================
-// Neutral: Kobold Guard
-//=================================================================================
-	"npc_dota_neutral_kobold_tunneler"
-	{
-		"MovementSpeed"				"340"		// Speed.
-	}		
-
-//=================================================================================
-// Neutral: Kobold Taskmaster
-//=================================================================================
-	"npc_dota_neutral_kobold_taskmaster"
-	{
-		"MovementSpeed"				"905"		// Speed.
-	}	
-
-//=================================================================================
-// Neutral: Centaur
-//=================================================================================
-	"npc_dota_neutral_centaur_outrunner"
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}
-
-//=================================================================================
-// Neutral: Centaur Chief
-//=================================================================================
-	"npc_dota_neutral_centaur_khan"
-	{
-		"MovementSpeed"				"400"		// Speed.
-	}
-
-//=================================================================================
-// Neutral: Fel Beast
-//=================================================================================
-	"npc_dota_neutral_fel_beast"
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}		
-
-//=================================================================================
-// Neutral: Furbolg
-//=================================================================================
-	"npc_dota_neutral_polar_furbolg_champion"
-	{
-		"MovementSpeed"				"400"		// Speed.
-	}		
-
-//=================================================================================
-// Neutral: Furbolg Disrupter
-//=================================================================================
-	"npc_dota_neutral_polar_furbolg_ursa_warrior"
-	{
-		"MovementSpeed"				"400"		// Speed.
-	}	
-
-//=================================================================================
-// Neutral: Mud Golem
-//=================================================================================
-	"npc_dota_neutral_mud_golem"
-	{
-		"MovementSpeed"				"390"		// Speed.
-	}	
-
-//=================================================================================
-// Neutral: Mud Golem Split
-//=================================================================================
-	"npc_dota_neutral_mud_golem_split"
-	{
-		"MovementSpeed"				"390"		// Speed.
-	}	
-
-//=================================================================================
-// Neutral: Mud Golem Split - Doom
-//=================================================================================
-	"npc_dota_neutral_mud_golem_split_doom"
-	{										
-		"MovementSpeed"				"390"		// Speed.
-	}	
-
-//=================================================================================
-// Neutral: Ogre Mauler
-//=================================================================================
-	"npc_dota_neutral_ogre_mauler"
-	{
-		"MovementSpeed"				"340"		// Speed.
-	}	
-
-//=================================================================================
-// Neutral: Ogre Magi
-//=================================================================================
-	"npc_dota_neutral_ogre_magi"
-	{
-		"MovementSpeed"				"340"		// Speed.
-	}	
-
-//=================================================================================
-// Neutral: Worg
-//=================================================================================
-	"npc_dota_neutral_giant_wolf"
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}		
-
-//=================================================================================
-// Neutral: Alpha Worg
-//=================================================================================
-	"npc_dota_neutral_alpha_wolf"
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}		
-
-//=================================================================================
-// Neutral: Vulture
-//=================================================================================
-	"npc_dota_neutral_wildkin"
-	{
-		"MovementSpeed"				"375"		// Speed.
-	}		
-
-//=================================================================================
-// Neutral: Enraged Vulture
-//=================================================================================
-	"npc_dota_neutral_enraged_wildkin"
-	{
-		"MovementSpeed"				"400"		// Speed.
-	}		
-
-//=================================================================================
-// Neutral: Satyr Soulstealer
-//=================================================================================
-	"npc_dota_neutral_satyr_soulstealer"
-	{
-		"MovementSpeed"				"340"		// Speed.
-	}			
-
-//=================================================================================
-// Neutral: Satyr Hellcaller
-//=================================================================================
-	"npc_dota_neutral_satyr_hellcaller"
-	{
-		"MovementSpeed"				"365"		// Speed.
-	}		
-
-//=================================================================================
-// Neutral: Ancient - Jungle Stalker
-//=================================================================================
-	"npc_dota_neutral_jungle_stalker"
-	{
-		"MovementSpeed"				"400"		// Speed.
-	}	
-
-//=================================================================================
-// Neutral: Ancient - Elder Jungle Stalker
-//=================================================================================
-	"npc_dota_neutral_elder_jungle_stalker"
-	{
-		"MovementSpeed"				"400"		// Speed.
-	}	
-
-//=================================================================================
-// Neutral: Ancient - Blue Dragonspawn Sorcerer
-//=================================================================================
-	"npc_dota_neutral_blue_dragonspawn_sorcerer"
-	{
-		"MovementSpeed"				"340"		// Speed.
-	}	
-
-//=================================================================================
-// Neutral: Ancient - Blue Dragonspawn Overseer
-//=================================================================================
-	"npc_dota_neutral_blue_dragonspawn_overseer"
-	{
-		"MovementSpeed"				"375"		// Speed.
-	}
-
-//=================================================================================
-// Neutral: Ancient - Rock Golem
-//=================================================================================
-	"npc_dota_neutral_rock_golem"
-	{
-		"MovementSpeed"				"340"		// Speed.
-	}								  
-
-//=================================================================================
-// Neutral: Ancient - Granite Golem
-//=================================================================================
-	"npc_dota_neutral_granite_golem"
-	{
-		"MovementSpeed"				"340"		// Speed.
-	}		
-
-//=================================================================================
-// Neutral: Ancient - Big Thunder Lizard
-//=================================================================================
-	"npc_dota_neutral_big_thunder_lizard"
-	{
-		"MovementSpeed"				"340"		// Speed.
-	}		
-
-//=================================================================================
-// Neutral: Ancient - Small Thunder Lizard
-//=================================================================================
-	"npc_dota_neutral_small_thunder_lizard"
-	{
-		"MovementSpeed"				"340"		// Speed.
-	}		
-
-//=================================================================================	
-// Neutral: Gnoll Assassin
-//=================================================================================
-	"npc_dota_neutral_gnoll_assassin"	
-	{
-		"MovementSpeed"				"340"		// Speed.
-	}	
-
-//=================================================================================	
-// Neutral: Ghost
-//=================================================================================
-	"npc_dota_neutral_ghost"	
-	{
-		"MovementSpeed"				"400"		// Speed.
-	}	
-
-//=================================================================================	
-// Neutral: Dark Troll
-//=================================================================================
-	"npc_dota_neutral_dark_troll"	
-	{
-		"MovementSpeed"				"340"		// Speed.
-	}	
-
-//=================================================================================	
-// Neutral: Dark Troll Warlord
-//=================================================================================
-	"npc_dota_neutral_dark_troll_warlord"	
-	{
-		"MovementSpeed"				"400"		// Speed.
-	}	
-
-//=================================================================================	
-// Neutral: Satyr Trickster
-//=================================================================================
-	"npc_dota_neutral_satyr_trickster"	
-	{
-		"MovementSpeed"				"905"		// Speed.
-	}	
-
-//=================================================================================	
-// Neutral: Forest Troll Berserker
-//=================================================================================
-	"npc_dota_neutral_forest_troll_berserker"	
-	{
-		"MovementSpeed"				"340"		// Speed.
-	}	
-
-//=================================================================================	
-// Neutral: Forest Troll High Priest
-//=================================================================================
-	"npc_dota_neutral_forest_troll_high_priest"	
-	{
-		"MovementSpeed"				"365"		// Speed.
-	}
-
-//=================================================================================	
-// Neutral: Harpy Scout
-//=================================================================================
-	"npc_dota_neutral_harpy_scout"	
-	{
-		"MovementSpeed"				"350"		// Speed.
-	}
-
-//=================================================================================	
-// Neutral: Harpy Storm
-//=================================================================================
-	"npc_dota_neutral_harpy_storm"	
-	{
-		"MovementSpeed"				"390"		// Speed.
-	}	
-
-//=================================================================================	
-// Neutral: Ancient - Black Drake
-//=================================================================================
-	"npc_dota_neutral_black_drake"	
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}	
-//=================================================================================	
-// Neutral: Ancient - Black Dragon
-//=================================================================================
-	"npc_dota_neutral_black_dragon"	
-	{
-		"MovementSpeed"				"375"		// Speed.
-	}	
-	
-//=================================================================================
-// Creeps: necronomicon Warrior Level 1
-//=================================================================================
-	"npc_dota_necronomicon_warrior_1"
-	{
-		"MovementSpeed"				"440"		// Speed
-	}	
-
-//=================================================================================
-// Creeps: Necronomicon Warrior Level 2
-//=================================================================================
-	"npc_dota_necronomicon_warrior_2"
-	{
-		"MovementSpeed"				"440"		// Speed
-	}	
-
-//=================================================================================
-// Creeps: Necronomicon Warrior Level 3
-//=================================================================================
-	"npc_dota_necronomicon_warrior_3"
-	{
-		"MovementSpeed"				"440"		// Speed
-	}	
-
-//=================================================================================
-// Creeps: Necronomicon Archer Level 1
-//=================================================================================
-	"npc_dota_necronomicon_archer_1"
-	{
-		"MovementSpeed"				"905"		// Speed
-	}	
-	
-//=================================================================================
-// Creeps: Necronomicon Archer Level 2
-//=================================================================================
-	"npc_dota_necronomicon_archer_2"
-	{
-		"MovementSpeed"				"450"		// Speed
-	}	
-
-//=================================================================================
-// Creeps: Necronomicon Archer Level 3
-//=================================================================================
-	"npc_dota_necronomicon_archer_3"
-	{
-		"MovementSpeed"				"490"		// Speed
-	}	
-	
-	"npc_dota_observer_wards"
-	{
-	}	
-	
-	"npc_dota_sentry_wards"
-	{
-	}
-
-	"npc_dota_courier"
-	{
-		"MovementSpeed"				"440"		// Speed
-	}
-
-	"npc_dota_flying_courier"	 // deprecated
-	{
-		"MovementSpeed"				"500"		// Speed
-		"Ability2"					"courier_go_to_secretshop"
-	}
-
-	"npc_dota_witch_doctor_death_ward"
-	{
-	}
-
-	"npc_dota_shadow_shaman_ward_1"
-	{
-	}
-
-	"npc_dota_shadow_shaman_ward_2"
-	{
-	}
-
-	"npc_dota_shadow_shaman_ward_3"
-	{
-	}
-
-	// Venomancer Plague Wards
-	"npc_dota_venomancer_plague_ward_1"
-	{
-	}
-	
-	"npc_dota_venomancer_plague_ward_2"
-	{
-	}
-	
-	"npc_dota_venomancer_plague_ward_3"
-	{
-	}
-
-	"npc_dota_lesser_eidolon"
-	{
-		"MovementSpeed"				"315"		// Speed
-	}	
-
-	"npc_dota_eidolon"
-	{
-		"MovementSpeed"				"315"		// Speed
-	}	
-
-	"npc_dota_greater_eidolon"
-	{
-		"MovementSpeed"				"330"		// Speed
-	}	
-
-	"npc_dota_dire_eidolon"
-	{
-		"MovementSpeed"				"330"		// Speed
-	}
-	
-	"npc_dota_furion_treant"
-	{
-		"MovementSpeed"				"375"		// Speed
-	}
-	
-	"npc_dota_furion_treant_large"
-	{
-		"MovementSpeed"				"375"		// Speed
-	}
-
-	"npc_dota_invoker_forged_spirit"
-	{
-		"MovementSpeed"				"400"		// Speed
-	}
-
-	"npc_dota_broodmother_spiderling"
-	{
-		"MovementSpeed"				"440"		// Speed
-	}
-
-	"npc_dota_broodmother_spiderite"
-	{
-		"MovementSpeed"				"440"		// Speed
-	}
-
-	"npc_dota_dark_troll_warlord_skeleton_warrior"
-	{
-		"MovementSpeed"				"340"		// Speed
-	}
-
-	"npc_dota_enraged_wildkin_tornado"
-	{
-		"MovementSpeed"				"155"		// Speed
-	}
-
-	"npc_dota_roshan"
-	{
-		"MovementSpeed"				"340"		// Speed
-	}	
-
-	"npc_dota_roshan_halloween"
-	{
-		"MovementSpeed"				"370"		// Speed
-	}
-
-	//=================================================================================
-	// Warlock: Golem 1
-	//=================================================================================
-	"npc_dota_warlock_golem_1"
-	{
-		"MovementSpeed"				"400"		// Speed.
-	}	
-	
-	//=================================================================================
-	// Warlock: Golem 2
-	//=================================================================================
-	"npc_dota_warlock_golem_2"
-	{
-		"MovementSpeed"				"325"		// Speed.
-	}
-	
-	//=================================================================================
-	// Warlock: Golem 3
-	//=================================================================================
-	"npc_dota_warlock_golem_3"
-	{
-		"MovementSpeed"				"450"		// Speed.
-	}	
-
-
-
-	//=================================================================================
-	// Warlock: Golem 1 (Scepter Upgraded)
-	//=================================================================================
-	"npc_dota_warlock_golem_scepter_1"
-	{
-		"MovementSpeed"				"400"		// Speed.
-	}	
-	
-	//=================================================================================
-	// Warlock: Golem 2 (Scepter Upgraded)
-	//=================================================================================
-	"npc_dota_warlock_golem_scepter_2"
-	{
-		"MovementSpeed"				"405"		// Speed.
-	}
-	
-	//=================================================================================
-	// Warlock: Golem 3 (Scepter Upgraded)
-	//=================================================================================
-	"npc_dota_warlock_golem_scepter_3"
-	{
-		"MovementSpeed"				"450"		// Speed.
-	}	
-
-	//=================================================================================
-	// Beastmaster Units
-	//=================================================================================
-	
-	// Legacy
-	"npc_dota_scout_hawk"
-	{
-		"MovementSpeed"				"340"		// Speed.
-		
-	}	
-
-	// Legacy
-	"npc_dota_greater_hawk"
-	{
-		"MovementSpeed"				"500"		// Speed.
-	}	
-
-	"npc_dota_beastmaster_hawk_1"
-	{
-		"MovementSpeed"				"315"		// Speed.
-	}	
-
-	"npc_dota_beastmaster_hawk_2"
-	{
-		"MovementSpeed"				"345"		// Speed.
-	}	
-
-	"npc_dota_beastmaster_hawk_3"
-	{
-		"MovementSpeed"				"375"		// Speed.
-	}	
-
-	"npc_dota_beastmaster_hawk_4"
-	{
-		"MovementSpeed"				"405"		// Speed.
-	}	
-
-	// Legacy
-	"npc_dota_beastmaster_boar"
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}	
-
-	// Legacy
-	"npc_dota_beastmaster_greater_boar"
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}	
-
-	"npc_dota_beastmaster_boar_1"
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}	
-
-	"npc_dota_beastmaster_boar_2"
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}	
-
-	"npc_dota_beastmaster_boar_3"
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}	
-
-	"npc_dota_beastmaster_boar_4"
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}	
-
-	//=================================================================================
-	// Brewmaster Units
-	//=================================================================================
-	
-	"npc_dota_brewmaster_earth_1"
-	{
-		"MovementSpeed"				"405"		// Speed.
-	}	
-
-	"npc_dota_brewmaster_earth_2"
-	{
-		"MovementSpeed"				"405"		// Speed.
-	}	
-
-	"npc_dota_brewmaster_earth_3"
-	{
-		"MovementSpeed"				"405"		// Speed.
-	}	
-
-	"npc_dota_brewmaster_storm_1"
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}	
-
-	"npc_dota_brewmaster_storm_2"
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}	
-
-	"npc_dota_brewmaster_storm_3"
-	{
-		"MovementSpeed"				"440"		// Speed.
-	}	
-
-	"npc_dota_brewmaster_fire_1"
-	{
-		"MovementSpeed"				"644"		// Speed.
-	}	
-
-	"npc_dota_brewmaster_fire_2"
-	{
-		"MovementSpeed"				"644"		// Speed.
-	}	
-
-	"npc_dota_brewmaster_fire_3"
-	{
-		"MovementSpeed"				"644"		// Speed.
-	}	
-
-	"npc_dota_unit_tombstone1"
-	{
-	}
-
-	"npc_dota_unit_tombstone2"
-	{
-	}
-
-	"npc_dota_unit_tombstone3"
-	{
-	}
-
-	"npc_dota_unit_tombstone4"
-	{
-	}
-
-
-	"npc_dota_unit_undying_zombie"
-	{
-		"MovementSpeed"				"420"		// Speed
-	}
-
-	"npc_dota_unit_undying_zombie_torso"
-	{
-		"MovementSpeed"				"420"		// Speed
-	}
-
-
-	//=================================================================================
-
-	"npc_dota_pugna_nether_ward_1"
-	{
-		"MovementSpeed"				"0"		// Speed.
-	}	
-
-	"npc_dota_pugna_nether_ward_2"
-	{
-		"MovementSpeed"				"0"		// Speed.
-	}	
-
-	"npc_dota_pugna_nether_ward_3"
-	{
-	}	
-
-	"npc_dota_pugna_nether_ward_4"
-	{
-	}	
-
-	"npc_dota_templar_assassin_psionic_trap"
-	{
-	}	
-
-	"npc_dota_rattletrap_cog"
-	{
-	}	
-
-	"npc_dota_rattletrap_rocket"
-	{										
-
-	}	
-
-	"npc_dota_broodmother_web"
-	{
-	}	
-
-	"npc_dota_stormspirit_remnant"
-	{
-	}
-
-	"npc_dota_ember_spirit_remnant"
-	{
-	}
-
-	"npc_dota_earth_spirit_stone"
-	{
-	}
-
-	
-	"npc_dota_slark_visual"
-	{
-	}	
-
-	"npc_dota_weaver_swarm"							
-	{
-	}	
-
-	"npc_dota_gyrocopter_homing_missile"							
-	{
-	}	
-
-	"npc_dota_plasma_field"
-	{
-	}
-
-//=================================================================================
-// Lycan Wolves
-//=================================================================================
-	"npc_dota_lycan_wolf1"
-	{
-		"MovementSpeed"				"500"		// Speed.
-	}	
-
-	"npc_dota_lycan_wolf2"
-	{
-		"MovementSpeed"				"525"		// Speed.
-	}	
-
-	"npc_dota_lycan_wolf3"
-	{
-		"MovementSpeed"				"550"		// Speed.
-	}	
-
-	"npc_dota_lycan_wolf4"
-	{
-		"MovementSpeed"				"575"		// Speed.
-	}	
-//=================================================================================
-// Lone Druid Spirit Bears
-//=================================================================================
-	"npc_dota_lone_druid_bear1"
-	{
-		"MovementSpeed"				"400"		// Speed.
-		
-	}	
-	"npc_dota_lone_druid_bear2"
-	{
-		"MovementSpeed"				"400"		// Speed.
-	}	
-
-	"npc_dota_lone_druid_bear3"
-	{
-		"MovementSpeed"				"905"		// Speed.		
-	}	
-	"npc_dota_lone_druid_bear4"
-	{
-		"MovementSpeed"				"325"		// Speed.
-	}	
-
-	"npc_dota_visage_familiar1"
-	{
-		"MovementSpeed"				"475"		// Speed
-	}
-
-	"npc_dota_visage_familiar2"
-	{
-		"MovementSpeed"				"490"		// Speed
-	}
-
-	"npc_dota_visage_familiar3"
-	{
-		"MovementSpeed"				"500"		// Speed
-	
-	}	
-	
-	"ent_dota_halloffame"
-	{		
-	}	
-
-	"npc_dota_wisp_spirit"
-	{
-	}	
-
-	"npc_dota_beastmaster_axe"
-	{
-	}	
-
-	"npc_dota_troll_warlord_axe"
-	{
-	}	
-
-	//=================================================================================
-
-	"npc_dota_phoenix_sun"
-	{
-	}
-
-	//=================================================================================
-	"npc_dota_target_dummy"
-	{
-		"MovementSpeed"				"440"		// Speed
-	}
-
-	//=================================================================================
-	"npc_dota_looping_sound"
-	{
-	}
-	
-	//=================================================================================
-	"npc_dota_invisible_vision_source"
-	{
-	}
-
-	"npc_dota_techies_land_mine"
-	{
-	}
-
-	"npc_dota_techies_stasis_trap"
-	{
-	}
-
-	"npc_dota_techies_remote_mine"
-	{
-	}
-
-	// Techies Minefield Sign
-	"npc_dota_techies_minefield_sign"
-	{
-	}
-
-	// Treant Eyes In The Forest
-	"npc_dota_treant_eyes"
-	{
-	}
-
-	// PA Kill Event Gravestone
-	"npc_dota_phantomassassin_gravestone"
-	{
-	}
-	
-  "npc_dota_tower_tier2"
-	{
-	}
-		
 }
