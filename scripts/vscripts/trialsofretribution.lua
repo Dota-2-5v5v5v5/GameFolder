@@ -132,10 +132,11 @@ function Trialsofretribution:OnGameInProgress()
 
 
 function SpawnCreeps()
-    local point = Entities:FindByName( nil, "radiantmid"):GetAbsOrigin()
+
     
     
 --RADIANT MID CREEPS
+    local point = Entities:FindByName( nil, "radiantmid"):GetAbsOrigin()
     local waypoint = Entities:FindByName(nil, "radiantmidloc1")
     local unit = CreateUnitByName("npc_dota_creep_custom3_ranged", point, true, nil, nil, DOTA_TEAM_CUSTOM_3)
     unit:SetInitialGoalEntity( waypoint )
@@ -382,12 +383,96 @@ function SpawnCreeps()
     
 end
 
-  Timers:CreateTimer(30, -- Start this timer 30 game-time seconds later
-    function()
-      DebugPrint("This function is called 30 seconds after the game begins, and every 30 seconds thereafter")
-      return 30.0 -- Rerun this timer every 30 game-time seconds
-			
+    local repeat_interval = 210 -- Rerun this timer every *repeat_interval* game-time seconds
+    local start_after = 210 -- Start this timer *start_after* game-time seconds later
+    print ("Timer 2 is running")
+
+    Timers:CreateTimer(start_after, function()
+        SpawnCreepssiege()
+        return repeat_interval
     end)
+
+
+function SpawnCreepssiege()
+
+		-- SIEGE CREEPS TEMPEST
+		
+    local point = Entities:FindByName( nil, "tempesttop"):GetAbsOrigin()
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_1)
+    local waypoint = Entities:FindByName(nil, "tempesttoploc2")    	
+    unit:SetInitialGoalEntity( waypoint )
+	print ("siege spawned in")
+	local point = Entities:FindByName( nil, "tempestbot"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "tempestbotloc1")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_1)
+    unit:SetInitialGoalEntity( waypoint )
+	local point = Entities:FindByName( nil, "tempestmid"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "tempestmidloc2")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_1)
+    unit:SetInitialGoalEntity( waypoint )
+	    local point = Entities:FindByName( nil, "tempestmid"):GetAbsOrigin()
+
+    local waypoint = Entities:FindByName(nil, "tempestmidloc1")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_1)
+    unit:SetInitialGoalEntity( waypoint )
+	
+	-- SIEGE CREEPS DIRE
+	
+	local point = Entities:FindByName( nil, "direbot"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "direbotloc1")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_4)
+    unit:SetInitialGoalEntity( waypoint )
+	local point = Entities:FindByName( nil, "diretop"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "diretoploc1")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_4)
+    unit:SetInitialGoalEntity( waypoint )
+	local point = Entities:FindByName( nil, "diremid"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "diremidloc8")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_4)
+    unit:SetInitialGoalEntity( waypoint )
+	local point = Entities:FindByName( nil, "diremid"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "diremidloc2")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_4)
+    unit:SetInitialGoalEntity( waypoint )
+	
+	-- SIEGE CREEPS RADIANT
+	
+	local point = Entities:FindByName( nil, "radianttop"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "radianttoploc2")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_3)
+    unit:SetInitialGoalEntity( waypoint )
+	local point = Entities:FindByName( nil, "radiantbot"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "radiantbotloc2")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_3)
+    unit:SetInitialGoalEntity( waypoint )
+	local point = Entities:FindByName( nil, "radiantmid"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "radiantmidloc3")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_3)
+    unit:SetInitialGoalEntity( waypoint )
+	    local point = Entities:FindByName( nil, "radiantmid"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "radiantmidloc1")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_3)
+    unit:SetInitialGoalEntity( waypoint )
+	
+	-- SIEGE CREEPS ALTIAR
+	
+	local point = Entities:FindByName( nil, "altiartop"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "altiarbottop1")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_2)
+    unit:SetInitialGoalEntity( waypoint )
+	local point = Entities:FindByName( nil, "altiarbot"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "altiarbotloc2")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_2)
+    unit:SetInitialGoalEntity( waypoint )
+	local point = Entities:FindByName( nil, "altiarmid"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "altiarmidloc2")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_2)
+    unit:SetInitialGoalEntity( waypoint )
+	local point = Entities:FindByName( nil, "altiarmid"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "altiarmidloc1")
+    local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_2)
+    unit:SetInitialGoalEntity( waypoint )
+end
 end
 
 
