@@ -10,6 +10,7 @@
 //=================================================================================
 // Creeps: Tempest Ranged
 //=================================================================================
+
 	"npc_dota_creep_custom1_ranged"
 	{
 		// General
@@ -584,7 +585,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"tower_protection"	// Ability 1.
-		"Ability2"					"true_sight"		// Ability 2.
+		"Ability2"					"tower_truesight"		// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -678,7 +679,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"tower_protection"			// Ability 1.
-		"Ability2"					"true_sight"			// Ability 2.
+		"Ability2"					"tower_truesight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -771,7 +772,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"tower_protection"			// Ability 1.
-		"Ability2"					"true_sight"			// Ability 2.
+		"Ability2"					"tower_truesight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -864,7 +865,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					""	// Ability 1.
-		"Ability2"					"true_sight"		// Ability 2.
+		"Ability2"					"tower_truesight"		// Ability 2.
 		"Ability3"					"tower_protection"	// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -958,7 +959,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -1051,7 +1052,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"				// Ability 3.
+		"Ability3"					"tower_truesight"				// Ability 3.
 		"Ability4"					""				// Ability 4.
 		"Ability5"					""				// Ability 5.
 		"Ability6"					""				// Ability 6 - Extra.
@@ -1144,7 +1145,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -1237,7 +1238,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -1330,7 +1331,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -1423,7 +1424,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -3133,7 +3134,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"tower_protection"			// Ability 1.
-		"Ability2"					"true_sight"			// Ability 2.
+		"Ability2"					"tower_truesight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -3227,7 +3228,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"tower_protection"			// Ability 1.
-		"Ability2"					"true_sight"			// Ability 2.
+		"Ability2"					"tower_truesight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -3320,7 +3321,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"tower_protection"			// Ability 1.
-		"Ability2"					"true_sight"			// Ability 2.
+		"Ability2"					"tower_truesight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -3412,7 +3413,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"true_sight"			// Ability 1.
+		"Ability1"					"tower_truesight"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -3507,7 +3508,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -3600,7 +3601,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -3693,7 +3694,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -3786,7 +3787,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -3879,7 +3880,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -3972,7 +3973,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -5628,7 +5629,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"tower_protection"	// Ability 1.
-		"Ability2"					"true_sight"		// Ability 2.
+		"Ability2"					"tower_truesight"		// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -5722,7 +5723,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"tower_protection"			// Ability 1.
-		"Ability2"					"true_sight"			// Ability 2.
+		"Ability2"					"tower_truesight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -5815,7 +5816,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"tower_protection"			// Ability 1.
-		"Ability2"					"true_sight"			// Ability 2.
+		"Ability2"					"tower_truesight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -5908,7 +5909,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"backdoor_protection"	// Ability 1.
-		"Ability2"					"true_sight"		// Ability 2.
+		"Ability2"					"tower_truesight"		// Ability 2.
 		"Ability3"					"tower_protection"	// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -6002,7 +6003,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -6095,7 +6096,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"				// Ability 3.
+		"Ability3"					"tower_truesight"				// Ability 3.
 		"Ability4"					""				// Ability 4.
 		"Ability5"					""				// Ability 5.
 		"Ability6"					""				// Ability 6 - Extra.
@@ -6188,7 +6189,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -6281,7 +6282,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -6374,7 +6375,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -6467,7 +6468,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -8177,7 +8178,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"tower_protection"			// Ability 1.
-		"Ability2"					"true_sight"			// Ability 2.
+		"Ability2"					"tower_truesight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -8271,7 +8272,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"tower_protection"			// Ability 1.
-		"Ability2"					"true_sight"			// Ability 2.
+		"Ability2"					"tower_truesight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -8364,7 +8365,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"tower_protection"			// Ability 1.
-		"Ability2"					"true_sight"			// Ability 2.
+		"Ability2"					"tower_truesight"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -8458,7 +8459,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -8551,7 +8552,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -8644,7 +8645,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -8737,7 +8738,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -8830,7 +8831,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -8923,7 +8924,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -9016,7 +9017,7 @@
 		
 		"Ability1"					""			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
-		"Ability3"					"true_sight"			// Ability 3.
+		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.

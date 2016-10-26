@@ -330,6 +330,64 @@
     "BaseClass"           "ability_datadriven"
     "AbilityTextureName"            "rubick_empty1"
   }
+
+"tower_truesight"
+    {
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                                     "ability_datadriven"
+        "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"                            "rubick_empty1"
+        "MaxLevel"                                      "1"
+       
+        //----------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "radius"                "1100"
+            }
+        }
+        "Modifiers"
+        {
+            "modifier_truesight_datadriven"
+            {
+                "Passive"           "1"
+                "IsHidden"          "1"
+       
+                "ThinkInterval"  "0.03"
+                "OnIntervalThink"
+                {
+                    "RemoveModifier"
+                    {
+                        "Target"
+                        {
+                            "Center"    "TARGET"
+                            "Radius"    "%radius"
+                            "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                            "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+                            "Flags"     "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+                        }
+                        "ModifierName"  "modifier_truesight"
+                    }
+                    "ApplyModifier"
+                    {
+                        "Target"
+                        {
+                            "Center"    "TARGET"
+                            "Radius"    "%radius"
+                            "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                            "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+                            "Flags"     "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+                        }
+                        "ModifierName"  "modifier_truesight"
+                        "Duration"      "0.50"
+                    }          
+                }      
+            }
+        }
+    }
+
 // Rewrite of the Pudge Flesh Heap ability
 // Author: Valve
 // Date: 25.09.2015.
