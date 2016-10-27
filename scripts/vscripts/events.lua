@@ -242,8 +242,66 @@ function Trialsofretribution:_OnEntityKilled( keys )
     --TODO: Uncomment this when bugfixing OnFortKilled
     Trialsofretribution:OnFortKilled( keys )
   end
-
+  
+  if killedUnit:IsBuilding() then
+	  Trialsofretribution:OnCustomTowerKilled( keys )
+  end
+  
   -- Put code here to handle when an entity gets killed
+end
+
+function Trialsofretribution:OnCustomTowerKilled( keys )
+	local killer = EntIndexToHScript( keys.entindex_attacker )
+	local killedUnit = EntIndexToHScript( keys.entindex_killed )
+	
+	--For reference, the teams are mapped as follows
+	--Team 6 = Tempest
+	--Team 7  = Altair
+	--Team 8 = Radiant
+	--Team 9 = Dire
+	
+	local tower_name = killedUnit:GetName()
+	
+	--Make sure what we're looking at has a name
+	if tower_name == nil then
+		return
+	end
+	
+	local tower_num = tonumber(tower_name:sub(string.len(tower_name),string.len(tower_name)))
+	
+	--Make sure what we're looking at is a tower. 
+	--Only towers will be a npc_dota_building with a name ending in a number
+	if not tower_num then
+		return
+	end
+	
+	local tower_gold = 120 + tower_num * 40 -- The tower gold is 120 base gold + 40 x the tower tier (ex: Tier 1 = 160, Tier 2 = 200)
+	local deny_gold = tower_gold * 0.16
+	
+	--Check to see if the tower was denied
+	if killer:GetTeam() == killedUnit:GetTeam() then
+		--Loop through each of the four teams
+		for i=6,9,1 do
+			--Confirm that team getting gold is not the tower owner's team
+			if i~=killer:GetTeam() then
+				--Give 1/6th of the normal tower gold to each player on that team
+				for j=1,5,1 do
+					local current_player = PlayerResource:GetNthPlayerIDOnTeam(i, j)
+					if current_player ~= nil then
+						PlayerResource:ModifyGold(current_player,deny_gold, true, DOTA_ModifyGold_Building)
+					end
+				end
+			end
+		end
+	else
+		--Give each player from the killing team the tower_gold
+		for i=1,5,1 do
+			local current_player = PlayerResource:GetNthPlayerIDOnTeam(killer:GetTeam(), i)
+			if current_player ~= nil then
+				PlayerResource:ModifyGold(current_player,tower_gold, true, DOTA_ModifyGold_Building)
+			end
+		end
+	end
 end
 
 function Trialsofretribution:OnFortKilled( keys )
