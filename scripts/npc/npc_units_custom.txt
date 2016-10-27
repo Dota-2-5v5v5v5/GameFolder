@@ -295,9 +295,9 @@
 		// General
 		//
 		"BaseClass"					"npc_dota_creep_lane"	// Class of entity of link to.
-		"Model"						"models/creeps/lane_creeps/creep_bad_melee/creep_bad_melee.mdl"	// Model.
+		"Model"						"models/creeps/lane_creeps/creep_bad_melee/creep_bad_melee.vmdl"	// Model.
 		"SoundSet"					"Creep_Bad_Melee"					// Name of sound set.
-		"ModelScale" 					".93"
+		"ModelScale" 					".80"
 		"Level"						"3"
 		
 		// Abilities
@@ -2844,9 +2844,9 @@
 		// General
 		//
 		"BaseClass"					"npc_dota_creep_lane"	// Class of entity of link to.
-		"Model"						"models/creeps/lane_creeps/creep_bad_melee/creep_bad_melee.mdl"	// Model.
+		"Model"						"models/creeps/lane_creeps/creep_radiant_melee/radiant_melee.vmdl"	// Model.
 		"SoundSet"					"Creep_Bad_Melee"					// Name of sound set.
-		"ModelScale" 					".93"
+		"ModelScale" 					".80"
 		"Level"						"3"
 		
 		// Abilities
@@ -7609,7 +7609,7 @@
 		// General
 		//
 		"BaseClass"					"npc_dota_creep_lane"	// Class of entity of link to.
-		"Model"						"models/creeps/lane_creeps/creep_bad_ranged/lane_dire_ranged.mdl"	// Model.
+		"Model"						"models/creeps/lane_creeps/creep_radiant_ranged/radiant_ranged.vmdl"	// Model.
 		"SoundSet"					"Creep_Bad_Range"					// Name of sound set.
 		"ModelScale" 					"0.93"
 		"Level"						"2"
@@ -7888,7 +7888,7 @@
 		// General
 		//
 		"BaseClass"					"npc_dota_creep_lane"	// Class of entity of link to.
-		"Model"						"models/creeps/lane_creeps/creep_bad_melee/creep_bad_melee.mdl"	// Model.
+		"Model"						"models/creeps/lane_creeps/creep_radiant_melee/radiant_melee.vmdl"	// Model.
 		"SoundSet"					"Creep_Bad_Melee"					// Name of sound set.
 		"ModelScale" 					".93"
 		"Level"						"3"
