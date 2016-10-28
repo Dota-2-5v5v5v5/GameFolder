@@ -28,6 +28,7 @@ function Trialsofretribution:_InitTrialsofretribution()
   GameRules:SetCustomGameEndDelay( GAME_END_DELAY )
   GameRules:SetCustomVictoryMessageDuration( VICTORY_MESSAGE_DURATION )
   GameRules:SetStartingGold( STARTING_GOLD )
+  GameRules.DropTable = LoadKeyValues("scripts/drop.kv")
 
   if SKIP_TEAM_SETUP then
     GameRules:SetCustomGameSetupAutoLaunchDelay( 0 )

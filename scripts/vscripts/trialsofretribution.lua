@@ -505,6 +505,26 @@ function SpawnCreepssiege()
     local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_2)
     unit:SetInitialGoalEntity( waypoint )
 end
+
+    local start_after = 10 -- Start this timer *start_after* game-time seconds later
+    print ("Timer 2 is running")
+
+    Timers:CreateTimer(start_after, function()
+        Spawndragon()
+        
+    end)
+
+
+function Spawndragon()
+	local point = Entities:FindByName( nil, "Dragon_Spawner"):GetAbsOrigin()
+    local waypoint = Entities:FindByName(nil, "first")
+    local unit = CreateUnitByName("tor_dragon", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+    unit:SetInitialGoalEntity( waypoint )
+	unit:AddItem(CreateItem("item_rapier", unit, unit))
+	EmitGlobalSound("CNY_Beast.GlobalSilence.Effect")
+
+
+end
 end
 
 
