@@ -221,8 +221,27 @@ function Trialsofretribution:_OnEntityKilled( keys )
   DebugPrint( '[TRIALSOFRETRIBUTION] OnEntityKilled Called' )
   DebugPrintTable( keys )
 
+
   -- The Unit that was Killed
-  local killedUnit = EntIndexToHScript( keys.entindex_killed )
+      local killedUnit = EntIndexToHScript( keys.entindex_killed )
+    if killedUnit:IsCreature() then
+        RollDrops(killedUnit)
+    end
+	function RollDrops(unit)
+    local DropInfo = GameRules.DropTable[unit:GetUnitName()]
+    if DropInfo then
+        for item_name,chance in pairs(DropInfo) do
+            if RollPercentage(chance) then
+                -- Create the item
+                local item = CreateItem(item_name, nil, nil)
+                local pos = unit:GetAbsOrigin()
+                local drop = CreateItemOnPositionSync( pos, item )
+                local pos_launch = pos+RandomVector(RandomFloat(150,200))
+                item:LaunchLoot(false, 200, 0.75, pos_launch)
+            end
+        end
+    end
+end
   -- The Killing entity
   local killerEntity = nil
 

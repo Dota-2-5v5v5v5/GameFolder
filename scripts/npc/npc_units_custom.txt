@@ -10106,7 +10106,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					""			// Ability 1.
+		"Ability1"					"black_dragon_splash_attack_datadriven"			// Ability 1.
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
@@ -10117,14 +10117,14 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"					"90"			// Physical protection.
-		"MagicalResistance"				"60"			// Magical protection.
+		"ArmorPhysical"					"20"			// Physical protection.
+		"MagicalResistance"				"20"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"640"		// Damage range min.
-		"AttackDamageMax"			"740"		// Damage range max.
+		"AttackDamageMin"			"250"		// Damage range min.
+		"AttackDamageMax"			"250"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"1"			// Speed of attack.
 		"AttackAnimationPoint"			"0.5"		// Normalized time in animation cycle to attack.
@@ -10136,11 +10136,11 @@
 		// Attributes
 		//----------------------------------------------------------------
 		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
-		"AttributeBaseStrength"		"10"			// Base strength
+		"AttributeBaseStrength"		"0"			// Base strength
 		"AttributeStrengthGain"		"0"			// Strength bonus per level.
-		"AttributeBaseIntelligence"	"10"			// Base intelligence
+		"AttributeBaseIntelligence"	"0"			// Base intelligence
 		"AttributeIntelligenceGain"	"0"			// Intelligence bonus per level.
-		"AttributeBaseAgility"		"10"			// Base agility
+		"AttributeBaseAgility"		"0"			// Base agility
 		"AttributeAgilityGain"		"0"			// Agility bonus per level.
 
 		// Bounty
@@ -10164,7 +10164,7 @@
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"10000"		// Base health.
-		"StatusHealthRegen"			"15"			// Health regeneration rate.
+		"StatusHealthRegen"			"10"			// Health regeneration rate.
 		"StatusMana"				"500"		// Base mana.
 		"StatusManaRegen"			"1.75"		// Mana regeneration rate.
 
