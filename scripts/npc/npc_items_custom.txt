@@ -123,4 +123,129 @@
 			}
 		}
 	}
+	"item_eternity_blade_datadriven"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"item_datadriven"
+	"ID"							"10540"  //Valve's version of this item uses the ID "54".
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"Model"							"models/props_gameplay/red_box.vmdl" 
+	"Effect"						"particles/generic_gameplay/dropped_gem.vpcf"
+	"AbilityTextureName"			"eternity_blade_datadriven"
+	"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH"
+	"ItemPurchasable"                "0"
+    "ItemDroppable"                  "0"
+    "ItemSellable"                   "0"
+    "ItemKillable"                   "0"
+	"UIPickupSound"					"Item.PickUpGemShop"
+	"UIDropSound"					"Item.DropGemShop"
+	"WorldDropSound"				"Item.DropGemWorld"
+	"OnOwnerDied"
+		{
+			"RunScript"
+			{
+				"ScriptFile"			"scripts/vscripts/itemfunctions.lua"
+				"Function"			"DropItemOnDeath"
+				"ItemPurchasable"                "0"
+			}
+		}
+	
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemCost"						"3800"
+	"ItemShopTags"					"damage"
+	"ItemQuality"					""
+	"ItemAliases"					"Eternity Blade"
+	"SecretShop"					"0"
+
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"60"
+			}
+		"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"crit_chance"			"20"
+			}
+		"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"crit_bonus"		"280"
+			}			
+	}
+	
+	"Modifiers"
+	{
+		"modifier_item_relic_datadriven"
+		{
+			"Passive"			"1"
+			"IsHidden"			"0"
+			"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"		"%bonus_damage"
+			}
+		}
+		"modifier_crit"
+{
+    "Passive"   "1"
+    "IsHidden"  "1"
+    "OnAttackStart"
+    {
+        "RemoveModifier"
+        {
+            "ModifierName" "crit"
+            "Target" "CASTER"
+        }
+        "Random"
+        {
+            "Chance" "%crit_chance"
+            "OnSuccess"
+            {
+                "ApplyModifier"
+                {
+                    "ModifierName" "crit"
+                    "Target"    "CASTER"
+					"particle" "particles/eternal_blade_crit.vpcf"
+                }        
+            }
+        }
+    }
+}
+
+"crit" 
+{
+    "IsHidden"  "1"
+    "Properties"
+    {
+        "MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE" "%crit_bonus"
+    }
+
+    "OnAttackLanded"
+    {
+        "RemoveModifier"
+        {
+            "ModifierName"  "crit"
+            "Target"    "CASTER"    
+        }
+
+        // Basic blood particle effect
+        "FireEffect"
+        {
+        "EffectName" "particles/eternal_blade_crit.vpcf"
+            "EffectAttachType"  "follow_origin"
+            "Target"    "TARGET"
+        }
+    }
+}
+}
+}
+	
 }
