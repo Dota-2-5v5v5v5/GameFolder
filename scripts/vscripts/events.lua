@@ -313,8 +313,27 @@ function Trialsofretribution:OnFortKilled( keys )
   local fortCount = 0
   local players = {}
 
+  local teams = {'tempest', 'altiar', 'radiant', 'dire'}
+  local lanes = {'top', 'mid', 'bot' }
+  local spawners = {}
+
+  for _, value in pairs(lanes) do
+    local spawner = teams[killedTeam-5]..value
+    print('spawner name is: '..spawner)
+    table.insert(spawners, spawner)
+  end
+
+
   --Destroy all units from team that lost, find all players on that team
   for number,entity in pairs(all_units) do
+    print(entity:GetName())
+    for _, value in pairs(spawners) do
+      if entity:GetName() == value then
+        print('REMOVING SPAWNER')
+        print(entity:GetName())
+        entity:RemoveSelf()
+      end
+    end
 
     if entity:GetTeamNumber() == killedTeam then
       --print("number", number, "entity", entity:GetName())
@@ -331,9 +350,10 @@ function Trialsofretribution:OnFortKilled( keys )
           if contains == false then
             table.insert(players, entity:GetPlayerID())
           end
+        else
+          print("removing unit..", entity:GetName())
+          entity:RemoveSelf()
         end
-        --print("removing unit..", entity:GetName())
-        entity:RemoveSelf()
       end
     end
     if IsValidEntity(entity) and entity ~= killedUnit and isAncient(entity) then
@@ -348,17 +368,12 @@ function Trialsofretribution:OnFortKilled( keys )
   end
 
   --puts all the players on the lost team on custom team 3
-  for _, player in pairs(players) do
-  print('player')
-  print(type(player))
-  print(player)
-  print('custom team')
-  print(type(DOTA_TEAM_CUSTOM_5))
-  print(DOTA_TEAM_CUSTOM_5)
-PlayerResource:SetCustomTeamAssignment( player, DOTA_TEAM_CUSTOM_5 )
-print('moved player')
+  for _, playerID in pairs(players) do
+    local player = PlayerResource:GetPlayer(playerID)
+    local hero = player:GetAssignedHero()
+    hero:SetRespawnsDisabled(true)
+    PlayerResource:SetCustomTeamAssignment( playerID, DOTA_TEAM_NOTEAM )
   end
-print('moved all players')
 
   --todo: make custom 3 spectator like
 
@@ -367,6 +382,11 @@ end
 function isAncient(entity)
   local name = entity:GetName()
   return name == "tempestancient" or name == "kanikancient" or name == "radiantancient" or name == "direancient"
+end
+
+
+function kill(entity)
+  entity:Kill()
 end
 
 
