@@ -166,7 +166,7 @@
 		"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"60"
+				"bonus_damage"			"100"
 			}
 		"02"
 			{
@@ -185,7 +185,7 @@
 		"modifier_item_relic_datadriven"
 		{
 			"Passive"			"1"
-			"IsHidden"			"0"
+			"IsHidden"			"1"
 			"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
 			
 			"Properties"

@@ -506,7 +506,7 @@ function SpawnCreepssiege()
     unit:SetInitialGoalEntity( waypoint )
 end
 
-    local start_after = 10 -- Start this timer *start_after* game-time seconds later
+    local start_after = 1200 -- Start this timer *start_after* game-time seconds later
     print ("Timer 2 is running")
 
     Timers:CreateTimer(start_after, function()
@@ -520,7 +520,7 @@ function Spawndragon()
     local waypoint = Entities:FindByName(nil, "first")
     local unit = CreateUnitByName("tor_dragon", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
     unit:SetInitialGoalEntity( waypoint )
-	unit:AddItem(CreateItem("item_rapier", unit, unit))
+	unit:AddItem(CreateItem("item_eternity_blade_datadriven", unit, unit))
 	EmitGlobalSound("CNY_Beast.GlobalSilence.Effect")
 
 
