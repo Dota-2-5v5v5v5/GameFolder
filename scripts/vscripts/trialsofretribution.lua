@@ -514,7 +514,7 @@ end
         
     end)
 
-
+-- testing
 function Spawndragon()
 	local point = Entities:FindByName( nil, "Dragon_Spawner"):GetAbsOrigin()
     local waypoint = Entities:FindByName(nil, "first")

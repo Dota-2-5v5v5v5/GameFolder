@@ -10102,6 +10102,7 @@
 		"SoundSet"					"Creep_Bad_Range"					// Name of sound set.
 		"ModelScale" 					"1.6"
 		"Level"						"1"
+		"ConsideredHero"        "1"
 		
 		// Abilities
 		//----------------------------------------------------------------
