@@ -522,9 +522,40 @@ function Spawndragon()
     unit:SetInitialGoalEntity( waypoint )
 	unit:AddItem(CreateItem("item_eternity_blade_datadriven", unit, unit))
 	EmitGlobalSound("CNY_Beast.GlobalSilence.Effect")
+	unit:CanBeDominated (false)
 
 
 end
+Quest = SpawnEntityFromTableSynchronous( "quest", { name = "QuestName", title = "Norva Spawns in %quest_current_value% second(s)!" } )
+Quest.EndTime = 1200
+subQuest = SpawnEntityFromTableSynchronous( "subquest_base", { 
+           show_progress_bar = true, 
+           progress_bar_hue_shift = 130
+         } )
+		 Quest:AddSubquest( subQuest )
+		 -- text on the quest timer at start
+Quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, 1200 )
+Quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, 1200 )
+
+-- value on the bar
+subQuest:SetTextReplaceValue( SUBQUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, 1200 )
+subQuest:SetTextReplaceValue( SUBQUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, 1200 )
+Timers:CreateTimer(1, function()
+    Quest.EndTime = Quest.EndTime - 1
+    Quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, Quest.EndTime )
+    subQuest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, Quest.EndTime )
+
+    -- Finish the quest when the time is up  
+    if Quest.EndTime == 0 then 
+        EmitGlobalSound("Tutorial.Quest.complete_01") -- Part of game_sounds_music_tutorial
+        Quest:CompleteQuest()
+        return
+    else
+        return 1 -- Call again every second
+    end
+
+end)
+
 end
 
 
