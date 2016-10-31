@@ -70,7 +70,7 @@ NOTIFICATIONS_VERSION = "1.00"
     Notifications:RemoveBottomFromTeam(DOTA_TEAM_GOODGUYS, 1)
 
     -- Add 1 more notification to the bottom
-    Notifications:BottomToAll({text="GREEEENNNN again", duration=9, style={color="green"}})
+    Notifications:BottomToAll({text="GREEEENNNN again", duration=9, style={color="green", ["font-size"]="110px", border="10px solid blue"}})
   end)
 
   -- Clear all notifications from the bottom
