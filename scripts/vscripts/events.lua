@@ -340,6 +340,7 @@ function Trialsofretribution:OnFortKilled( keys )
     local spawner = teams[killedTeam-5]..value
     print('spawner name is: '..spawner)
     table.insert(spawners, spawner)
+	EmitAnnouncerSoundForTeam("ann_custom_end_04", killedTeam)
   end
 
 

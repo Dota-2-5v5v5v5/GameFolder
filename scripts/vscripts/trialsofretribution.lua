@@ -88,6 +88,7 @@ end
 ]]
 function Trialsofretribution:OnAllPlayersLoaded()
   DebugPrint("[TRIALSOFRETRIBUTION] All Players have loaded into the game")
+  EmitAnnouncerSound("announcer_announcer_now_select")
 end
 
 --[[
@@ -124,7 +125,7 @@ function Trialsofretribution:OnGameInProgress()
     local repeat_interval = 30 -- Rerun this timer every *repeat_interval* game-time seconds
     local start_after = 0 -- Start this timer *start_after* game-time seconds later
     print ("Timer is running")
-
+	EmitAnnouncerSound("announcer_announcer_welcome_07")
     Timers:CreateTimer(start_after, function()
         SpawnCreeps()
         return repeat_interval
@@ -508,7 +509,6 @@ end
 
     local start_after = 1200 -- Start this timer *start_after* game-time seconds later
     print ("Timer 2 is running")
-
     Timers:CreateTimer(start_after, function()
         Spawndragon()
         
@@ -521,11 +521,14 @@ function Spawndragon()
     local unit = CreateUnitByName("tor_dragon", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
     unit:SetInitialGoalEntity( waypoint )
 	unit:AddItem(CreateItem("item_eternity_blade_datadriven", unit, unit))
+	Notifications:TopToAll({text="Norva Has Spawned!", duration=9, style={color="magenta", ["font-size"]="45px", border="0px  megenta"}})
 	EmitGlobalSound("CNY_Beast.GlobalSilence.Effect")
 	unit:CanBeDominated (false)
+	
 
 
 end
+
 Quest = SpawnEntityFromTableSynchronous( "quest", { name = "QuestName", title = "Norva Spawns in %quest_current_value% second(s)!" } )
 Quest.EndTime = 1200
 subQuest = SpawnEntityFromTableSynchronous( "subquest_base", { 
