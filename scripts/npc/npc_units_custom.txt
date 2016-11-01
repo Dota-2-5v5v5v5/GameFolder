@@ -5908,7 +5908,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"backdoor_protection"	// Ability 1.
+		"Ability1"					""	// Ability 1.
 		"Ability2"					"tower_truesight"		// Ability 2.
 		"Ability3"					"tower_protection"	// Ability 3.
 		"Ability4"					""			// Ability 4.

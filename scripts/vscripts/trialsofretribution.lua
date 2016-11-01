@@ -607,17 +607,7 @@ function Spawndragon()
 
 
 end
-<<<<<<< HEAD
-    local start_after = 1200 -- Start this timer *start_after* game-time seconds later
-    print ("Timer 2 is running")
 
-    Timers:CreateTimer(start_after, function()
-        Spawndragon()
-        
-    end)
-=======
-
->>>>>>> master
 Quest = SpawnEntityFromTableSynchronous( "quest", { name = "QuestName", title = "Norva Spawns in %quest_current_value% second(s)!" } )
 Quest.EndTime = 1200
 subQuest = SpawnEntityFromTableSynchronous( "subquest_base", { 
