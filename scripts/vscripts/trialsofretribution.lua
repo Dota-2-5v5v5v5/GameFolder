@@ -205,6 +205,19 @@ function SpawnCreeps()
 	    local unit = CreateUnitByName("npc_dota_creep_custom3_melee", point, true, nil, nil, DOTA_TEAM_CUSTOM_3)
     unit:SetInitialGoalEntity( waypoint )
     print ("units were spawned in!")
+		end
+
+    local repeat_interval = 30 -- Rerun this timer every *repeat_interval* game-time seconds
+    local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    print ("Timer 2 is running")
+
+    Timers:CreateTimer(start_after, function()
+        SpawnCreepsaltiar()
+        return repeat_interval
+    end)
+
+
+function SpawnCreepsaltiar()
     
 --ALTIAR MID CREEPS
     
@@ -274,6 +287,19 @@ function SpawnCreeps()
 	    local unit = CreateUnitByName("npc_dota_creep_custom2_melee", point, true, nil, nil, DOTA_TEAM_CUSTOM_2)
     unit:SetInitialGoalEntity( waypoint )
     print ("units were spawned in!")
+		end
+
+    local repeat_interval = 30 -- Rerun this timer every *repeat_interval* game-time seconds
+    local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    print ("Timer 2 is running")
+
+    Timers:CreateTimer(start_after, function()
+        SpawnCreepsdire()
+        return repeat_interval
+    end)
+
+
+function SpawnCreepsdire()
     
 -- DIRE MID CREEPS
     
@@ -344,6 +370,19 @@ function SpawnCreeps()
 	    local unit = CreateUnitByName("npc_dota_creep_custom4_melee", point, true, nil, nil, DOTA_TEAM_CUSTOM_4)
     unit:SetInitialGoalEntity( waypoint )
     print ("units were spawned in!")
+	end
+
+    local repeat_interval = 30 -- Rerun this timer every *repeat_interval* game-time seconds
+    local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    print ("Timer 2 is running")
+
+    Timers:CreateTimer(start_after, function()
+        SpawnCreepstempest()
+        return repeat_interval
+    end)
+
+
+function SpawnCreepstempest()
     
 -- TEMPEST MID CREEPS
     
@@ -447,6 +486,19 @@ function SpawnCreepssiege()
     local waypoint = Entities:FindByName(nil, "tempestmidloc1")
     local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_1)
     unit:SetInitialGoalEntity( waypoint )
+	end
+	
+	    local repeat_interval = 210 -- Rerun this timer every *repeat_interval* game-time seconds
+    local start_after = 210 -- Start this timer *start_after* game-time seconds later
+    print ("Timer 2 is running")
+
+    Timers:CreateTimer(start_after, function()
+        SpawnCreepssiegedire()
+        return repeat_interval
+    end)
+
+
+function SpawnCreepssiegedire()
 	
 	-- SIEGE CREEPS DIRE
 	
@@ -466,6 +518,19 @@ function SpawnCreepssiege()
     local waypoint = Entities:FindByName(nil, "diremidloc2")
     local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_4)
     unit:SetInitialGoalEntity( waypoint )
+		end
+	
+	    local repeat_interval = 210 -- Rerun this timer every *repeat_interval* game-time seconds
+    local start_after = 210 -- Start this timer *start_after* game-time seconds later
+    print ("Timer 2 is running")
+
+    Timers:CreateTimer(start_after, function()
+        SpawnCreepssiegeradiant()
+        return repeat_interval
+    end)
+
+
+function SpawnCreepssiegeradiant()
 	
 	-- SIEGE CREEPS RADIANT
 	
@@ -485,6 +550,20 @@ function SpawnCreepssiege()
     local waypoint = Entities:FindByName(nil, "radiantmidloc1")
     local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_3)
     unit:SetInitialGoalEntity( waypoint )
+	
+	end
+	
+	    local repeat_interval = 210 -- Rerun this timer every *repeat_interval* game-time seconds
+    local start_after = 210 -- Start this timer *start_after* game-time seconds later
+    print ("Timer 2 is running")
+
+    Timers:CreateTimer(start_after, function()
+        SpawnCreepssiegealtiar()
+        return repeat_interval
+    end)
+
+
+function SpawnCreepssiegealtiar()
 	
 	-- SIEGE CREEPS ALTIAR
 	
@@ -526,6 +605,13 @@ function Spawndragon()
 
 
 end
+    local start_after = 1200 -- Start this timer *start_after* game-time seconds later
+    print ("Timer 2 is running")
+
+    Timers:CreateTimer(start_after, function()
+        Spawndragon()
+        
+    end)
 Quest = SpawnEntityFromTableSynchronous( "quest", { name = "QuestName", title = "Norva Spawns in %quest_current_value% second(s)!" } )
 Quest.EndTime = 1200
 subQuest = SpawnEntityFromTableSynchronous( "subquest_base", { 
