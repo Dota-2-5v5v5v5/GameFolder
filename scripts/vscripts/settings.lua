@@ -95,11 +95,11 @@ USE_CUSTOM_TEAM_COLORS = true           -- Should we use custom team colors?
 USE_CUSTOM_TEAM_COLORS_FOR_PLAYERS = true          -- Should we use custom team colors to color the players/minimap?
 
 TEAM_COLORS = {}                        -- If USE_CUSTOM_TEAM_COLORS is set, use these colors.
-TEAM_COLORS[DOTA_TEAM_GOODGUYS] = { 0, 255, 128 }   --       Teal
-TEAM_COLORS[DOTA_TEAM_BADGUYS]  = { 255, 0, 128 }   --         Yellow
+TEAM_COLORS[DOTA_TEAM_GOODGUYS] = { 0, 255, 128 }   --       GOODGUYS
+TEAM_COLORS[DOTA_TEAM_BADGUYS]  = { 255, 0, 128 }   --         BADGUYS
 TEAM_COLORS[DOTA_TEAM_CUSTOM_1] = { 255, 255, 0 } -- Tempest
-TEAM_COLORS[DOTA_TEAM_CUSTOM_2] = { 77, 77, 255 } -- Altiar
-TEAM_COLORS[DOTA_TEAM_CUSTOM_3] = { 0, 255, 255 } -- Radiant
+TEAM_COLORS[DOTA_TEAM_CUSTOM_2] = { 0, 109, 218 } -- Altiar
+TEAM_COLORS[DOTA_TEAM_CUSTOM_3] = { 45, 255, 150 } -- Radiant
 TEAM_COLORS[DOTA_TEAM_CUSTOM_4] = { 255, 0, 255 } -- Dire
 TEAM_COLORS[DOTA_TEAM_CUSTOM_5] = { 129, 83, 54 }   --        Brown
 TEAM_COLORS[DOTA_TEAM_CUSTOM_6] = { 27, 192, 216 }  --       Cyan
