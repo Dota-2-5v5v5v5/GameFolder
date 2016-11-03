@@ -270,21 +270,38 @@ end
 end
 
 function Trialsofretribution:OnCustomTowerKilled( keys )
-	local killer = EntIndexToHScript( keys.entindex_attacker )
-	local killedUnit = EntIndexToHScript( keys.entindex_killed )
-	
-	--For reference, the teams are mapped as follows
-	--Team 6 = Tempest
-	--Team 7  = Altair
-	--Team 8 = Radiant
-	--Team 9 = Dire
-	
-	local tower_name = killedUnit:GetName()
-	
-	--Make sure what we're looking at has a name
-	if tower_name == nil then
-		return
-	end
+    local killer = EntIndexToHScript( keys.entindex_attacker )
+    local killedUnit = EntIndexToHScript( keys.entindex_killed )
+   
+    --For reference, the teams are mapped as follows
+    --Team 6 = Tempest
+    --Team 7  = Altair
+    --Team 8 = Radiant
+    --Team 9 = Dire
+   
+    local tower_name = killedUnit:GetName()
+ 
+    --Make sure what we're looking at has a name
+    if tower_name == nil then
+        return
+    end
+   
+    if(tower_name == "radiantbot1" or tower_name == "radiantbot2" or tower_name == "radiantbot3" or tower_name == "radiantmid1" or tower_name == "radiantmid2" or tower_name == "radiantmid3" or tower_name == "radianttop1" or tower_name == "radianttop2" or tower_name == "radianttop3" or tower_name == "radianttop4" or tower_name == "radiantbot4") then
+EmitAnnouncerSound("announcer_ann_custom_tower_fall_01") end
+    if(tower_name == "direbot1" or tower_name == "direbot2" or tower_name == "direbot3" or tower_name == "diremid1" or tower_name == "diremid2" or tower_name == "diremid3" or tower_name == "diretop1" or tower_name == "diretop2" or tower_name == "diretop3" or tower_name == "diretop4" or tower_name == "direbot4") then
+EmitAnnouncerSound("announcer_ann_custom_tower_fall_03")end
+	if(tower_name == "tempestbot1" or tower_name == "temestbot2" or tower_name == "tempestbot3" or tower_name == "tempestmid1" or tower_name == "tempestmid2" or tower_name == "tempestmid3" or tower_name == "tempesttop1" or tower_name == "tempesttop2" or tower_name == "tempesttop3" or tower_name == "tempesttop4" or tower_name == "tempestbot4") then
+EmitAnnouncerSound("announcer_ann_custom_tower_fall_02")end
+	if(tower_name == "altiarbot1" or tower_name == "altiarbot2" or tower_name == "altiarbot3" or tower_name == "altiarmid1" or tower_name == "altiarmid2" or tower_name == "altiarmid3" or tower_name == "altiartop1" or tower_name == "altiartop2" or tower_name == "altiartop3" or tower_name == "altiartop4" or tower_name == "altiarbot4") then
+EmitAnnouncerSound("announcer_ann_custom_tower_fall_09")end
+ 
+    local tower_num = tonumber(tower_name:sub(string.len(tower_name),string.len(tower_name)))
+   
+    --Make sure what we're looking at is a tower.
+    --Only towers will be a npc_dota_building with a name ending in a number
+    if not tower_num then
+        return
+    end
 	
 	local tower_num = tonumber(tower_name:sub(string.len(tower_name),string.len(tower_name)))
 	
@@ -327,6 +344,11 @@ function Trialsofretribution:OnFortKilled( keys )
   local killedUnit = EntIndexToHScript( keys.entindex_killed )
   local killedTeam = killedUnit:GetTeamNumber()
 
+  if(killedTeam == 6) then EmitAnnouncerSound("announcer_ann_custom_defeated_02")end 
+  if(killedTeam == 7) then EmitAnnouncerSound("announcer_ann_custom_defeated_09")end 
+  if(killedTeam == 8) then EmitAnnouncerSound("announcer_ann_custom_defeated_01")end 
+  if(killedTeam == 9) then EmitAnnouncerSound("announcer_ann_custom_defeated_03")end  
+
   local all_units = Entities:FindAllInSphere(Vector(0,0,0), 12000.0)
   local remainingFort
   local fortCount = 0
@@ -340,7 +362,6 @@ function Trialsofretribution:OnFortKilled( keys )
     local spawner = teams[killedTeam-5]..value
     print('spawner name is: '..spawner)
     table.insert(spawners, spawner)
-	EmitAnnouncerSoundForTeam("ann_custom_end_04", killedTeam)
   end
 
 
@@ -383,8 +404,12 @@ function Trialsofretribution:OnFortKilled( keys )
   end
   if fortCount == 1 then
     GameRules:SetGameWinner(remainingFort:GetTeamNumber())
+	if(remainingFort:GetTeamNumber() == 6) then EmitAnnouncerSound("announcer_ann_custom_victory_02")end
+	if(remainingFort:GetTeamNumber() == 7) then EmitAnnouncerSound("announcer_ann_custom_victory_09")end
+	if(remainingFort:GetTeamNumber() == 8) then EmitAnnouncerSound("announcer_ann_custom_victory_01")end
+	if(remainingFort:GetTeamNumber() == 9) then EmitAnnouncerSound("announcer_ann_custom_victory_03")end
     GameRules:SetSafeToLeave(true)
-    GameRules:Defeated()
+    GameRules:Victory()
   end
 
   --puts all the players on the lost team on custom team 3
