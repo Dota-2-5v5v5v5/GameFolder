@@ -607,21 +607,29 @@ function Spawndragon()
 
 
 end
+    
+    local start_after = 1140 -- Start this timer *start_after* game-time seconds later
+    print ("Timer 2 is running")
 
+    Timers:CreateTimer(start_after, function()
+        firstquest()
+        return repeat_interval
+    end)
+function firstquest()
 Quest = SpawnEntityFromTableSynchronous( "quest", { name = "QuestName", title = "Norva Spawns in %quest_current_value% second(s)!" } )
-Quest.EndTime = 1200
+Quest.EndTime = 60
 subQuest = SpawnEntityFromTableSynchronous( "subquest_base", { 
            show_progress_bar = true, 
            progress_bar_hue_shift = 130
          } )
 		 Quest:AddSubquest( subQuest )
 		 -- text on the quest timer at start
-Quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, 1200 )
-Quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, 1200 )
+Quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, 60 )
+Quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, 60 )
 
 -- value on the bar
-subQuest:SetTextReplaceValue( SUBQUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, 1200 )
-subQuest:SetTextReplaceValue( SUBQUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, 1200 )
+subQuest:SetTextReplaceValue( SUBQUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, 60 )
+subQuest:SetTextReplaceValue( SUBQUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, 60 )
 Timers:CreateTimer(1, function()
     Quest.EndTime = Quest.EndTime - 1
     Quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, Quest.EndTime )
@@ -638,6 +646,7 @@ Timers:CreateTimer(1, function()
 
 end)
 
+end
 end
 
 
