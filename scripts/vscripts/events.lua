@@ -293,7 +293,7 @@ EmitAnnouncerSound("announcer_ann_custom_tower_fall_03")end
 	if(tower_name == "tempestbot1" or tower_name == "temestbot2" or tower_name == "tempestbot3" or tower_name == "tempestmid1" or tower_name == "tempestmid2" or tower_name == "tempestmid3" or tower_name == "tempesttop1" or tower_name == "tempesttop2" or tower_name == "tempesttop3" or tower_name == "tempesttop4" or tower_name == "tempestbot4") then
 EmitAnnouncerSound("announcer_ann_custom_tower_fall_02")end
 	if(tower_name == "altiarbot1" or tower_name == "altiarbot2" or tower_name == "altiarbot3" or tower_name == "altiarmid1" or tower_name == "altiarmid2" or tower_name == "altiarmid3" or tower_name == "altiartop1" or tower_name == "altiartop2" or tower_name == "altiartop3" or tower_name == "altiartop4" or tower_name == "altiarbot4") then
-EmitAnnouncerSound("announcer_ann_custom_tower_fall_09")end
+EmitAnnouncerSound("announcer_ann_custom_tower_fall_11")end
  
     local tower_num = tonumber(tower_name:sub(string.len(tower_name),string.len(tower_name)))
    
@@ -405,7 +405,7 @@ function Trialsofretribution:OnFortKilled( keys )
   if fortCount == 1 then
     GameRules:SetGameWinner(remainingFort:GetTeamNumber())
 	if(remainingFort:GetTeamNumber() == 6) then EmitAnnouncerSound("announcer_ann_custom_victory_02")end
-	if(remainingFort:GetTeamNumber() == 7) then EmitAnnouncerSound("announcer_ann_custom_victory_09")end
+	if(remainingFort:GetTeamNumber() == 7) then EmitAnnouncerSound("announcer_ann_custom_victory_011")end
 	if(remainingFort:GetTeamNumber() == 8) then EmitAnnouncerSound("announcer_ann_custom_victory_01")end
 	if(remainingFort:GetTeamNumber() == 9) then EmitAnnouncerSound("announcer_ann_custom_victory_03")end
     GameRules:SetSafeToLeave(true)
