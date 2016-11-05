@@ -10101,7 +10101,7 @@
 		"Model"						"models/items/dragon_knight/oblivion_blazer_dragon/oblivion_blazer_dragon.vmdl"	// Model.
 		"SoundSet"					"Creep_Bad_Range"					// Name of sound set.
 		"ModelScale" 					"1.6"
-		"Level"						"1"
+		"Level"						"30"
 		"ConsideredHero"        "1"
 		
 		// Abilities
