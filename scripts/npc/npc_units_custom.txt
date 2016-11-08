@@ -2567,7 +2567,7 @@
 		"BaseClass"					"npc_dota_creep_lane"	// Class of entity of link to.
 		"Model"						"models/creeps/neutral_creeps/n_creep_gnoll/n_creep_gnoll_frost.vmdl"	// Model.
 		"SoundSet"					"Creep_Bad_Range"					// Name of sound set.
-		"ModelScale" 					"0.98"
+		"ModelScale" 					"0.99"
 		"Level"						"2"
 		
 		// Abilities
