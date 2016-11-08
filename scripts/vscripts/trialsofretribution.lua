@@ -600,7 +600,7 @@ function Spawndragon()
     local unit = CreateUnitByName("tor_dragon", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
     unit:SetInitialGoalEntity( waypoint )
 	unit:AddItem(CreateItem("item_eternity_blade_datadriven", unit, unit))
-	Notifications:TopToAll({text="Norva Has Spawned!", duration=9, style={color="magenta", ["font-size"]="45px", border="0px  megenta"}})
+	Notifications:BottomToAll({text="Norva Has Spawned!", duration=9, style={color="magenta", ["font-size"]="45px", border="0px  megenta"}})
 	EmitGlobalSound("CNY_Beast.GlobalSilence.Effect")
 	unit:CanBeDominated (false)
 	
