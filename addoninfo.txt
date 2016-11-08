@@ -1,8 +1,8 @@
 "AddonInfo"
 {
-	maps			"tor_067"
+	maps			"tor_068"
 	"IsPlayable"	"1"
-	"tor_067"
+	"tor_068"
 	{
 					"MaxPlayers"                    "20"
 	}

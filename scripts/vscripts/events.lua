@@ -1,4 +1,4 @@
--- This file contains all trialsofretribution-registered events and has already set up the passed-in parameters for your use.
+--- This file contains all trialsofretribution-registered events and has already set up the passed-in parameters for your use.
 
 -- Cleanup a player when they leave
 function Trialsofretribution:OnDisconnect(keys)
@@ -147,6 +147,7 @@ function Trialsofretribution:OnLastHit(keys)
   DebugPrintTable(keys)
 
   local isFirstBlood = keys.FirstBlood == 1
+  if(isFirstBlood)then EmitAnnouncerSound ("announcer_killing_spree_announcer_1stblood_01")end
   local isHeroKill = keys.HeroKill == 1
   local isTowerKill = keys.TowerKill == 1
   local player = PlayerResource:GetPlayer(keys.PlayerID)
@@ -221,27 +222,22 @@ function Trialsofretribution:_OnEntityKilled( keys )
   DebugPrint( '[TRIALSOFRETRIBUTION] OnEntityKilled Called' )
   DebugPrintTable( keys )
 
-
   -- The Unit that was Killed
       local killedUnit = EntIndexToHScript( keys.entindex_killed )
-    if killedUnit:IsCreature() then
-        RollDrops(killedUnit)
-    end
-	function RollDrops(unit)
-    local DropInfo = GameRules.DropTable[unit:GetUnitName()]
-    if DropInfo then
-        for item_name,chance in pairs(DropInfo) do
-            if RollPercentage(chance) then
-                -- Create the item
-                local item = CreateItem(item_name, nil, nil)
-                local pos = unit:GetAbsOrigin()
-                local drop = CreateItemOnPositionSync( pos, item )
-                local pos_launch = pos+RandomVector(RandomFloat(150,200))
-                item:LaunchLoot(false, 200, 0.75, pos_launch)
-            end
-        end
-    end
-end
+          local killer = EntIndexToHScript( keys.entindex_attacker )
+          local unit_killed = killedUnit:GetName()
+          if(unit_killed == "npc_dota_roshan") then 
+          	 Trialsofretribution:OnRoshanKilled ( keys )
+          	end
+
+       local killedUnit = EntIndexToHScript( keys.entindex_killed )
+          local killer = EntIndexToHScript( keys.entindex_attacker )
+          local unit_killed = killedUnit:GetName()
+          if(unit_killed == "npc_dota_courier") then 
+          	 Trialsofretribution:OnCourierKilled ( keys )
+          	end
+
+
   -- The Killing entity
   local killerEntity = nil
 
@@ -264,10 +260,46 @@ end
   
   if killedUnit:IsBuilding() then
 	  Trialsofretribution:OnCustomTowerKilled( keys )
+	else
   end
-  
-  -- Put code here to handle when an entity gets killed
+
+  if killedUnit:IsCreature() then
+  	Trialsofretribution:OnCreatureKilled( keys )
+  else
+  end
 end
+
+function Trialsofretribution:OnCourierKilled ( keys )
+	local killedUnit = EntIndexToHScript( keys.entindex_killed )
+	local killedTeam = killedUnit:GetTeamNumber()
+	print(killedUnit:GetTeamNumber())
+		if(killedTeam == 6) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_02")end
+		if(killedTeam == 7) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_11")end
+		if(killedTeam == 8) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_01")end
+		if(killedTeam == 9) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_03")end 
+		if(killedTeam == 2) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_03")end
+end
+
+function Trialsofretribution:OnRoshanKilled ( keys )
+	local killedUnit = EntIndexToHScript( keys.entindex_killed )
+	local killer = EntIndexToHScript( keys.entindex_attacker )
+	local killing_team = killer:GetTeamNumber()
+	if(killing_team == 6) then EmitAnnouncerSound("announcer_ann_custom_roshan_fall_02")end
+	if(killing_team == 7) then EmitAnnouncerSound("announcer_ann_custom_roshan_fall_11")end
+	if(killing_team == 8) then EmitAnnouncerSound("announcer_ann_custom_roshan_fall_01")end
+	if(killing_team == 9) then EmitAnnouncerSound("announcer_ann_custom_roshan_fall_03")end
+end
+
+function Trialsofretribution:OnCreatureKilled( keys )
+	local killedUnit = EntIndexToHScript( keys.entindex_killed )
+	local creature_name = killedUnit:GetName()
+	print(killedUnit:GetName())
+		if(creature_name == "npc_dota_creature") then EmitAnnouncerSound("announcer_announcer_beast_slain_01")
+	print("unit is norva")
+else
+	end
+end
+
 
 function Trialsofretribution:OnCustomTowerKilled( keys )
     local killer = EntIndexToHScript( keys.entindex_attacker )
@@ -280,7 +312,6 @@ function Trialsofretribution:OnCustomTowerKilled( keys )
     --Team 9 = Dire
    
     local tower_name = killedUnit:GetName()
- 
     --Make sure what we're looking at has a name
     if tower_name == nil then
         return
@@ -345,7 +376,7 @@ function Trialsofretribution:OnFortKilled( keys )
   local killedTeam = killedUnit:GetTeamNumber()
 
   if(killedTeam == 6) then EmitAnnouncerSound("announcer_ann_custom_defeated_02")end 
-  if(killedTeam == 7) then EmitAnnouncerSound("announcer_ann_custom_defeated_09")end 
+  if(killedTeam == 7) then EmitAnnouncerSound("announcer_ann_custom_defeated_011")end 
   if(killedTeam == 8) then EmitAnnouncerSound("announcer_ann_custom_defeated_01")end 
   if(killedTeam == 9) then EmitAnnouncerSound("announcer_ann_custom_defeated_03")end  
 
