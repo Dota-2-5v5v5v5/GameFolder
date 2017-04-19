@@ -28,8 +28,7 @@ function Trialsofretribution:_InitTrialsofretribution()
   GameRules:SetCustomGameEndDelay( GAME_END_DELAY )
   GameRules:SetCustomVictoryMessageDuration( VICTORY_MESSAGE_DURATION )
   GameRules:SetStartingGold( STARTING_GOLD )
-  GameRules.DropTable = LoadKeyValues("scripts/drop.kv")
-
+  
   if SKIP_TEAM_SETUP then
     GameRules:SetCustomGameSetupAutoLaunchDelay( 0 )
     GameRules:LockCustomGameSetupTeamAssignment( true )
@@ -126,11 +125,8 @@ function Trialsofretribution:_InitTrialsofretribution()
       Trialsofretribution:StartEventTest()
     end, "events test", 0)]]
 
-  local spew = 0
-  if TRIALSOFRETRIBUTION_DEBUG_SPEW then
-    spew = 1
-  end
-  Convars:RegisterConvar('trialsofretribution_spew', tostring(spew), 'Set to 1 to start spewing trialsofretribution debug info.  Set to 0 to disable.', 0)
+
+  
 
   -- Change random seed
   local timeTxt = string.gsub(string.gsub(GetSystemTime(), ':', ''), '^0+','')

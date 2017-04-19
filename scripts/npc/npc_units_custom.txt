@@ -667,7 +667,7 @@
 	{
 		// General
 		//
-		"BaseClass"					"npc_dota_building"	// Class of entity of link to.
+		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
 		"SoundSet"					"Tower.Fire"					// Name of sound set.
 		"MinimapIcon"					"minimap_tower45"
