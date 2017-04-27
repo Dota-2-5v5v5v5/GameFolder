@@ -3682,7 +3682,7 @@
 	{
 		// General
 		//
-		"BaseClass"					"npc_dota_building"	// Class of entity of link to.
+		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
 		"Model"						"models/props_structures/tower001.mdl"// Model.
 		"SoundSet"					"Tower.Water"					// Name of sound set.
 		"MinimapIcon"					"minimap_tower90"
@@ -3692,7 +3692,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					""			// Ability 1.
+		"Ability1"					"backdoor_protection"			// Ability 1.
 		"Ability2"					"tower_protection"			// Ability 2.
 		"Ability3"					"tower_truesight"			// Ability 3.
 		"Ability4"					""			// Ability 4.
