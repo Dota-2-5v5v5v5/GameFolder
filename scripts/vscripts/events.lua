@@ -447,8 +447,34 @@ function Trialsofretribution:OnFortKilled( keys )
   for _, playerID in pairs(players) do
     local player = PlayerResource:GetPlayer(playerID)
     local hero = player:GetAssignedHero()
-    hero:SetRespawnsDisabled(true)
-    PlayerResource:SetCustomTeamAssignment( playerID, DOTA_TEAM_NOTEAM )
+    if hero:IsAlive() then
+      hero:SetRespawnsDisabled(true)
+      hero:ForceKill(false)
+      else
+        heroRespawnUnit()
+        hero:SetRespawnsDisabled(true)
+        hero:ForceKill(false)
+
+          
+
+        end
+
+
+    local fow = Entities:FindByName( nil, "mid"):GetAbsOrigin()
+    AddFOWViewer(killedTeam, fow, 60000000, 999999999, false)
+    local fow = Entities:FindByName( nil, "radiant"):GetAbsOrigin()
+    AddFOWViewer(killedTeam, fow, 6000000, 999999999, false)
+    local fow = Entities:FindByName( nil, "dire"):GetAbsOrigin()
+    AddFOWViewer(killedTeam, fow, 6000000, 999999999, false)
+        local fow = Entities:FindByName( nil, "altiar"):GetAbsOrigin()
+    AddFOWViewer(killedTeam, fow, 6000000, 999999999, false)
+    local fow = Entities:FindByName( nil, "tempest"):GetAbsOrigin()
+    AddFOWViewer(killedTeam, fow, 6000000, 999999999, false)
+
+
+
+    
+
   end
 
   --todo: make custom 3 spectator like

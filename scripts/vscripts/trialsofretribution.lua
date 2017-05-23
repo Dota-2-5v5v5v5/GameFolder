@@ -122,6 +122,7 @@ end
   is useful for starting any game logic timers/thinkers, beginning the first round, etc.
 ]]
 function Trialsofretribution:OnGameInProgress()
+  CUSTOM_TEAM_PLAYER_COUNT[DOTA_TEAM_CUSTOM_5] = 15
     local repeat_interval = 30 -- Rerun this timer every *repeat_interval* game-time seconds
     local start_after = 0 -- Start this timer *start_after* game-time seconds later
     print ("Timer is running")
@@ -506,7 +507,7 @@ function SpawnCreepssiegealtiar()
     unit:SetInitialGoalEntity( waypoint )
 
 	local point = Entities:FindByName( nil, "altiarmid"):GetAbsOrigin()
-    local waypoint = Entities:FindByName(nil, "altiarmidloc1")
+    local waypoint = Entities:FindByName(nil, "snowmidcreep")
     local unit = CreateUnitByName("npc_dota_custom1_siege", point, true, nil, nil, DOTA_TEAM_CUSTOM_1)
     unit:SetInitialGoalEntity( waypoint )
 end
