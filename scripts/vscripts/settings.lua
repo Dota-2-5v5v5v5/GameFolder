@@ -2,11 +2,11 @@
 
 
 ENABLE_HERO_RESPAWN = true              -- Should the heroes automatically respawn on a timer or stay dead until manually respawned
-UNIVERSAL_SHOP_MODE = false             -- Should the main shop contain Secret Shop items as well as regular items
+UNIVERSAL_SHOP_MODE = true            -- Should the main shop contain Secret Shop items as well as regular items
 ALLOW_SAME_HERO_SELECTION = false        -- Should we let people select the same hero as each other
 
-HERO_SELECTION_TIME = 75.0              -- How long should we let people select their hero?
-PRE_GAME_TIME = 45.0                    -- How long after people select their heroes should the horn blow and the game start?
+HERO_SELECTION_TIME = 60.0              -- How long should we let people select their hero?
+PRE_GAME_TIME = 40.0                    -- How long after people select their heroes should the horn blow and the game start?
 POST_GAME_TIME = 300.0                  -- How long should we let people look at the scoreboard before closing the server automatically?
 TREE_REGROW_TIME = 300.0                 -- How long should it take individual trees to respawn after being cut down/destroyed?
 
@@ -14,7 +14,7 @@ GOLD_PER_TICK = 1                    -- How much gold should players get per tic
 GOLD_TICK_TIME = .6                      -- How long should we wait in seconds between gold ticks?
 
 RECOMMENDED_BUILDS_DISABLED = false     -- Should we disable the recommened builds for heroes
-CAMERA_DISTANCE_OVERRIDE = 1341           -- How far out should we allow the camera to go?  Use -1 for the default (1134) while still allowing for panorama camera distance changes
+CAMERA_DISTANCE_OVERRIDE = -1           -- How far out should we allow the camera to go?  Use -1 for the default (1134) while still allowing for panorama camera distance changes
 
 MINIMAP_ICON_SIZE = .75                   -- What icon size should we use for our heroes?
 MINIMAP_CREEP_ICON_SIZE = .75             -- What icon size should we use for creeps?
@@ -56,7 +56,7 @@ ENABLE_FIRST_BLOOD = true               -- Should we enable first blood for the 
 HIDE_KILL_BANNERS = false               -- Should we hide the kill banners that show when a player is killed?
 LOSE_GOLD_ON_DEATH = true               -- Should we have players lose the normal amount of dota gold on death?
 SHOW_ONLY_PLAYER_INVENTORY = false      -- Should we only allow players to see their own inventory even when selecting other units?
-DISABLE_STASH_PURCHASING = true        -- Should we prevent players from being able to buy items into their stash when not at a shop?
+DISABLE_STASH_PURCHASING = false        -- Should we prevent players from being able to buy items into their stash when not at a shop?
 DISABLE_ANNOUNCER = false               -- Should we disable the announcer from working in the game?
 FORCE_PICKED_HERO = nil                 -- What hero should we force all players to spawn as? (e.g. "npc_dota_hero_axe").  Use nil to allow players to pick their own hero.
 
@@ -75,7 +75,7 @@ DISABLE_KILLING_SPREE_ANNOUNCER = false -- Shuold we disable the killing spree a
 DISABLE_STICKY_ITEM = false             -- Should we disable the sticky item button in the quick buy area?
 SKIP_TEAM_SETUP = false                 -- Should we skip the team setup entirely?
 ENABLE_AUTO_LAUNCH = true               -- Should we automatically have the game complete team setup after AUTO_LAUNCH_DELAY seconds?
-AUTO_LAUNCH_DELAY = 30                  -- How long should the default team selection launch timer be?  The default for custom games is 30.  Setting to 0 will skip team selection.
+AUTO_LAUNCH_DELAY = 15                  -- How long should the default team selection launch timer be?  The default for custom games is 30.  Setting to 0 will skip team selection.
 LOCK_TEAM_SETUP = false                 -- Should we lock the teams initially?  Note that the host can still unlock the teams 
 
 
@@ -97,10 +97,10 @@ USE_CUSTOM_TEAM_COLORS_FOR_PLAYERS = true          -- Should we use custom team 
 TEAM_COLORS = {}                        -- If USE_CUSTOM_TEAM_COLORS is set, use these colors.
 TEAM_COLORS[DOTA_TEAM_GOODGUYS] = { 0, 255, 128 }   --       GOODGUYS
 TEAM_COLORS[DOTA_TEAM_BADGUYS]  = { 255, 0, 128 }   --         BADGUYS
-TEAM_COLORS[DOTA_TEAM_CUSTOM_1] = { 206, 192, 29 } -- Tempest
-TEAM_COLORS[DOTA_TEAM_CUSTOM_2] = { 191, 212, 255 } -- Altiar
-TEAM_COLORS[DOTA_TEAM_CUSTOM_3] = { 0, 255, 192 } -- Radiant
-TEAM_COLORS[DOTA_TEAM_CUSTOM_4] = { 203, 98, 203 } -- Dire
+TEAM_COLORS[DOTA_TEAM_CUSTOM_1] = { 0, 0 , 255 } -- Tempest
+TEAM_COLORS[DOTA_TEAM_CUSTOM_2] = { 255 , 255 , 0 } -- Altiar
+TEAM_COLORS[DOTA_TEAM_CUSTOM_3] = { 0 , 255 , 0 } -- Radiant
+TEAM_COLORS[DOTA_TEAM_CUSTOM_4] = { 255 , 0 , 0 } -- Dire
 TEAM_COLORS[DOTA_TEAM_CUSTOM_5] = { 129, 83, 54 }   --        Brown
 TEAM_COLORS[DOTA_TEAM_CUSTOM_6] = { 27, 192, 216 }  --       Cyan
 TEAM_COLORS[DOTA_TEAM_CUSTOM_7] = { 199, 228, 13 }  --       Olive

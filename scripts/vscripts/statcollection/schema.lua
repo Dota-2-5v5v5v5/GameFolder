@@ -3,10 +3,7 @@ customSchema = class({})
 function customSchema:init()
 
     -- Check the schema_examples folder for different implementations
-
-    -- Flag Example
-    -- statCollection:setFlags({version = GetVersion()})
-
+  
     -- Listen for changes in the current state
     ListenToGameEvent('game_rules_state_change', function(keys)
         local state = GameRules:State_Get()
@@ -39,8 +36,6 @@ function customSchema:init()
     end
 end
 
-
-
 -------------------------------------
 
 -- In the statcollection/lib/utilities.lua, you'll find many useful functions to build your schema.
@@ -70,6 +65,17 @@ function BuildPlayersArray()
 
                     -- Example functions for generic stats are defined in statcollection/lib/utilities.lua
                     -- Add player values here as someValue = GetSomePlayerValue(),
+                    ph = GetHeroName(playerID), --Hero by its short name
+                    pk = hero:GetKills(), --Number of kills of this players hero
+                    pd = hero:GetDeaths(), --Number of deaths of this players hero
+                    pl = hero:GetLevel(), --Player Levels
+                    nt = GetNetworth(hero), --Sum of hero gold and item worth
+
+                    -- Item List
+                    il = GetItemList(hero),
+
+                    -- Bottel Count
+                   
                 })
             end
         end
@@ -114,7 +120,5 @@ function BuildRoundWinnerArray()
     end
     return winners
 end
-
-
 
 -------------------------------------

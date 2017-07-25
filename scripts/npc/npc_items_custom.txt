@@ -247,4 +247,21 @@
 }
 }
 }
+
+
+
+    "item_tpscroll"
+    {
+    "AbilityCooldown"				"45.0"
+    }
+ 
+"tp1"
+{
+		"ItemPurchasable"                "0"
 }
+
+
+
+
+}
+

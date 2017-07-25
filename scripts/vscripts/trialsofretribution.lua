@@ -41,6 +41,7 @@ require('internal/events')
 require('settings')
 -- events.lua is where you can specify the actions to be taken when any event occurs and is one of the core trialsofretribution files.
 require('events')
+require('junglecamps')
 
 
 -- This is a detailed example of many of the containers.lua possibilities, but only activates if you use the provided "playground" map
@@ -99,18 +100,16 @@ end
   The hero parameter is the hero entity that just spawned in
 ]]
 function Trialsofretribution:OnHeroInGame(hero)
-  DebugPrint("[TRIALSOFRETRIBUTION] Hero spawned in game for first time -- " .. hero:GetUnitName())
-
+  DebugPrint("[BAREBONES] Hero spawned in game for first time -- " .. hero:GetUnitName())
   -- This line for example will set the starting gold of every hero to 500 unreliable gold
   --hero:SetGold(500, false)
 
   -- These lines will create an item and add it to the player, effectively ensuring they start with the item
-  local item = CreateItem("item_example_item", hero, hero)
-  hero:AddItem(item)
+  -- local item = CreateItem("item_example_item", hero, hero)
+  -- hero:AddItem(item)
 
   --[[ --These lines if uncommented will replace the W ability of any hero that loads into the game
     --with the "example_ability" ability
-
   local abil = hero:GetAbilityByIndex(1)
   hero:RemoveAbility(abil:GetAbilityName())
   hero:AddAbility("example_ability")]]
@@ -123,6 +122,39 @@ end
 ]]
 function Trialsofretribution:OnGameInProgress()
   CUSTOM_TEAM_PLAYER_COUNT[DOTA_TEAM_CUSTOM_5] = 15
+_G.canspawn = true
+_G.canspawn2 = true
+_G.canspawn3 = true
+_G.canspawn4 = true
+_G.canspawn5 = true
+_G.canspawn6 = true
+_G.canspawn7 = true
+_G.canspawn8 = true
+_G.canspawn9 = true
+_G.canspawn10 = true
+_G.canspawn11 = true
+_G.canspawn12 = true
+_G.canspawn13 = true
+_G.canspawn14 = true
+_G.canspawn15 = true
+_G.canspawn16 = true
+_G.canspawn17 = true
+_G.canspawn18 = true
+_G.canspawn19 = true
+_G.canspawn20 = true
+_G.canspawn21 = true
+_G.canspawn22 = true
+_G.canspawn23 = true
+_G.canspawn24 = true
+_G.canspawn25 = true
+_G.canspawn26 = true
+_G.canspawn27 = true
+_G.canspawn28 = true
+_G.canspawn29 = true
+_G.canspawn30 = true
+_G.canspawn31 = true
+_G.canspawn32 = true
+
     local repeat_interval = 30 -- Rerun this timer every *repeat_interval* game-time seconds
     local start_after = 0 -- Start this timer *start_after* game-time seconds later
     print ("Timer is running")
@@ -131,6 +163,7 @@ function Trialsofretribution:OnGameInProgress()
         SpawnCreeps()
         return repeat_interval
     end)
+
 
 
 function SpawnCreeps()
@@ -154,10 +187,8 @@ function SpawnCreeps()
       
         
 --RADIANT TOP CREEPS
-    
-    
-    
-    local point = Entities:FindByName( nil, "radiantbot"):GetAbsOrigin()
+      
+        local point = Entities:FindByName( nil, "radiantbot"):GetAbsOrigin()
 
     local waypoint = Entities:FindByName(nil, "radiantbotloc1")
     local unit = CreateUnitByName("npc_dota_creep_custom3_ranged", point, true, nil, nil, DOTA_TEAM_CUSTOM_3)
@@ -175,7 +206,6 @@ function SpawnCreeps()
     
 --RADIANT BOTTOM CREEPS
     
-
     local point = Entities:FindByName( nil, "radianttop"):GetAbsOrigin()
 
     local waypoint = Entities:FindByName(nil, "radianttoploc1")
@@ -220,9 +250,7 @@ function SpawnCreepsaltiar()
 	    local unit = CreateUnitByName("npc_dota_creep_custom2_melee", point, true, nil, nil, DOTA_TEAM_CUSTOM_1)
     unit:SetInitialGoalEntity( waypoint )
     print ("units were spawned in!")
-    
-
-    
+       
 -- ALTIAR BOT CREEPS
     
     local point = Entities:FindByName( nil, "altiarbot"):GetAbsOrigin()
@@ -286,10 +314,7 @@ function SpawnCreepsdire()
 	    local unit = CreateUnitByName("npc_dota_creep_custom4_melee", point, true, nil, nil, DOTA_TEAM_CUSTOM_4)
     unit:SetInitialGoalEntity( waypoint )
     print ("units were spawned in!")
-    
-    
-    
-    
+        
     -- DIRE TOP CREEPS
     
     local point = Entities:FindByName( nil, "diretop"):GetAbsOrigin()
@@ -354,9 +379,7 @@ function SpawnCreepstempest()
 	    local unit = CreateUnitByName("npc_dota_creep_custom1_melee", point, true, nil, nil, DOTA_TEAM_CUSTOM_2)
     unit:SetInitialGoalEntity( waypoint )
     print ("units were spawned in!")
-    
-
-    
+        
     -- TEMPEST BOTTOM CREEPS
     
     local point = Entities:FindByName( nil, "tempestbot"):GetAbsOrigin()
@@ -512,16 +535,1397 @@ function SpawnCreepssiegealtiar()
     unit:SetInitialGoalEntity( waypoint )
 end
 
-    local start_after = 1200 -- Start this timer *start_after* game-time seconds later
+
+-- JUNGLE CAMP FUNCTIONS
+    local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
     print ("Timer 2 is running")
     Timers:CreateTimer(start_after, function()
-        Spawndragon()
+        junglecamps1()
+        return repeat_interval
+        
+    end)
+function junglecamps1()
+
+
+  local i = RandomInt(1, 6)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle1e"):GetAbsOrigin()
+print(tostring(_G.canspawn))
+  if i == 1 and _G.canspawn == true then 
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn == true then 
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_tunneler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_high_priest", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn == true then 
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn == true then 
+        CreateUnitByName("npc_dota_neutral_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 6 and _G.canspawn == true then 
+        CreateUnitByName("npc_dota_neutral_harpy_storm", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+    local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps2()
+        return repeat_interval
+        
+    end)
+function junglecamps2()
+
+
+  local i = RandomInt(1, 6)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle2e"):GetAbsOrigin()
+print(tostring(_G.canspawn2))
+  if i == 1 and _G.canspawn2 == true then 
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn2 == true then 
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_tunneler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn2 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_high_priest", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn2 == true then 
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn2 == true then 
+        CreateUnitByName("npc_dota_neutral_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 6 and _G.canspawn2 == true then 
+        CreateUnitByName("npc_dota_neutral_harpy_storm", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps3()
+        return repeat_interval
+        
+    end)
+function junglecamps3()
+
+
+  local i = RandomInt(1, 6)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle3e"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn3 == true then 
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn3 == true then 
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_tunneler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn3 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_high_priest", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn3 == true then 
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn3 == true then 
+        CreateUnitByName("npc_dota_neutral_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 6 and _G.canspawn3 == true then 
+        CreateUnitByName("npc_dota_neutral_harpy_storm", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps4()
+        return repeat_interval
         
     end)
 
--- testing
+function junglecamps4()
+
+
+  local i = RandomInt(1, 6)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle4e"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn4 == true then 
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn4 == true then 
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_tunneler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn4 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_high_priest", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn4 == true then 
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn4 == true then 
+        CreateUnitByName("npc_dota_neutral_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 6 and _G.canspawn4 == true then 
+        CreateUnitByName("npc_dota_neutral_harpy_storm", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
 
 end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps5()
+        return repeat_interval
+        
+    end)
+
+function junglecamps5()
+
+
+  local i = RandomInt(1, 6)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle5e"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn5 == true then 
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn5 == true then 
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_tunneler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn5 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_high_priest", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn5 == true then 
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn5 == true then 
+        CreateUnitByName("npc_dota_neutral_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 6 and _G.canspawn5 == true then 
+        CreateUnitByName("npc_dota_neutral_harpy_storm", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps6()
+        return repeat_interval
+        
+    end)
+
+function junglecamps6()
+
+
+  local i = RandomInt(1, 6)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle6e"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn6 == true then 
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn6 == true then 
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_tunneler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn6 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_high_priest", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn6 == true then 
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn6 == true then 
+        CreateUnitByName("npc_dota_neutral_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 6 and _G.canspawn6 == true then 
+        CreateUnitByName("npc_dota_neutral_harpy_storm", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps7()
+        return repeat_interval
+        
+    end)
+
+function junglecamps7()
+
+
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle1m"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn7 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn7 == true then 
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_alpha_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn7 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn7 == true then 
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_magi", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn7 == true then 
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps8()
+        return repeat_interval
+        
+    end)
+
+function junglecamps8()
+
+
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle2m"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn8 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn8 == true then 
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_alpha_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn8 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn8 == true then 
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_magi", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn8 == true then 
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end 
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps9()
+        return repeat_interval
+        
+    end)
+
+function junglecamps9()
+
+
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle3m"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn9 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn9 == true then 
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_alpha_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn9 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn9 == true then 
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_magi", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn9 == true then 
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps10 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps10()
+
+
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle4m"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn10 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn10 == true then 
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_alpha_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn10 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn10 == true then 
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_magi", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn10 == true then 
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps11 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps11()
+
+
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle5m"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn11 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn11 == true then 
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_alpha_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn11 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn11 == true then 
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_magi", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn11 == true then 
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps12 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps12()
+
+
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle6m"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn12 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn12 == true then 
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_alpha_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn12 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn12 == true then 
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_magi", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn12 == true then 
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps13 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps13()
+
+
+  local i = RandomInt(1, 6)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle7e"):GetAbsOrigin()
+  print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn13 == true then 
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn13 == true then 
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_tunneler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn13 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_high_priest", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn13 == true then 
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn13 == true then 
+        CreateUnitByName("npc_dota_neutral_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 6 and _G.canspawn13 == true then 
+        CreateUnitByName("npc_dota_neutral_harpy_storm", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps14 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps14()
+
+
+  local i = RandomInt(1, 6)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle8e"):GetAbsOrigin()
+  print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn14 == true then 
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_berserker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn14 == true then 
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_tunneler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_kobold_taskmaster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn14 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_forest_troll_high_priest", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn14 == true then 
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_gnoll_assassin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn14 == true then 
+        CreateUnitByName("npc_dota_neutral_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_wraith_ghost", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 6 and _G.canspawn14 == true then 
+        CreateUnitByName("npc_dota_neutral_harpy_storm", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_harpy_scout", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps15 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps15()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle7m"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn15 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn15 == true then 
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_alpha_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn15 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn15 == true then 
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_magi", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn15 == true then 
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps16 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps16()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle8m"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn16 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn16 == true then 
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_alpha_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn16 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn16 == true then 
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_magi", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn16 == true then 
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps17 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps17()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle9m"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn17 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn17 == true then 
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_alpha_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn17 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn17 == true then 
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_magi", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn17 == true then 
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps18 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps18()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle10m"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn18 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn18 == true then 
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_alpha_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn18 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn18 == true then 
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_magi", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn18 == true then 
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps19 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps19()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle11m"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn19 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn19 == true then 
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_alpha_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn19 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn19 == true then 
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_magi", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn19 == true then 
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps20 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps20()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle12m"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn20 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn20 == true then 
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_giant_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_alpha_wolf", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn20 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn20 == true then 
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_mauler", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_ogre_magi", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn20 == true then 
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_mud_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps21 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps21()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle1h"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn21 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn21 == true then 
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_ursa_warrior", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_champion", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn21 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_hellcaller", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn21 == true then 
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_enraged_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn21 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll_warlord", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps22 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps22()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle2h"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn22 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn22 == true then 
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_ursa_warrior", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_champion", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn22 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_hellcaller", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn22 == true then 
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_enraged_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn22 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll_warlord", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps23 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps23()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle3h"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn23 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn23 == true then 
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_ursa_warrior", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_champion", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn23 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_hellcaller", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn23 == true then 
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_enraged_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn23 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll_warlord", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps24 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps24()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle4h"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn24 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn24 == true then 
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_ursa_warrior", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_champion", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn24 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_hellcaller", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn24 == true then 
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_enraged_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn24 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll_warlord", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps25 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps25()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle5h"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn25 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn25 == true then 
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_ursa_warrior", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_champion", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn25 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_hellcaller", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn25 == true then 
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_enraged_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn25 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll_warlord", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps26 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps26()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle6h"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn26 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn26 == true then 
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_ursa_warrior", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_champion", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn26 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_hellcaller", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn26 == true then 
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_enraged_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn26 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll_warlord", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps27 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps27()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle7h"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn27 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn27 == true then 
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_ursa_warrior", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_champion", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn27 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_hellcaller", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn27 == true then 
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_enraged_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn27 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll_warlord", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps28 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps28()
+  local i = RandomInt(1, 5)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle8h"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn28 == true then 
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_outrunner", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_centaur_khan", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn28 == true then 
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_ursa_warrior", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_polar_furbolg_champion", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn28 == true then 
+        CreateUnitByName("npc_dota_neutral_satyr_soulstealer", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_hellcaller", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_satyr_trickster", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn28 == true then 
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_enraged_wildkin", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 5 and _G.canspawn28 == true then 
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_dark_troll_warlord", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps29 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps29()
+  local i = RandomInt(1, 4)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle1a"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn29 == true then 
+        CreateUnitByName("npc_dota_neutral_black_drake", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_black_drake", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_black_dragon", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn29 == true then 
+        CreateUnitByName("npc_dota_neutral_rock_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_rock_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_granite_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn29 == true then 
+        CreateUnitByName("npc_dota_neutral_small_thunder_lizard", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_small_thunder_lizard", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_big_thunder_lizard", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn29 == true then 
+        CreateUnitByName("npc_dota_neutral_prowler_acolyte", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_prowler_acolyte", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_prowler_shaman", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps30 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps30()
+  local i = RandomInt(1, 4)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle2a"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn30 == true then 
+        CreateUnitByName("npc_dota_neutral_black_drake", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_black_drake", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_black_dragon", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn30 == true then 
+        CreateUnitByName("npc_dota_neutral_rock_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_rock_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_granite_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn30 == true then 
+        CreateUnitByName("npc_dota_neutral_small_thunder_lizard", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_small_thunder_lizard", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_big_thunder_lizard", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn30 == true then 
+        CreateUnitByName("npc_dota_neutral_prowler_acolyte", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_prowler_acolyte", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_prowler_shaman", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps31 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps31()
+  local i = RandomInt(1, 4)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle3a"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn31 == true then 
+        CreateUnitByName("npc_dota_neutral_black_drake", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_black_drake", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_black_dragon", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn31 == true then 
+        CreateUnitByName("npc_dota_neutral_rock_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_rock_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_granite_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn31 == true then 
+        CreateUnitByName("npc_dota_neutral_small_thunder_lizard", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_small_thunder_lizard", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_big_thunder_lizard", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn31 == true then 
+        CreateUnitByName("npc_dota_neutral_prowler_acolyte", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_prowler_acolyte", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_prowler_shaman", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+local start_after = 0 -- Start this timer *start_after* game-time seconds later
+    local repeat_interval = 60
+    print ("Timer 2 is running")
+    Timers:CreateTimer(start_after, function()
+        junglecamps32 ()
+        return repeat_interval
+        
+    end)
+
+function junglecamps32()
+  local i = RandomInt(1, 4)
+  print(tostring(i))
+  local point = Entities:FindByName( nil, "jungle4a"):GetAbsOrigin()
+print(tostring(_G.canspawn3))
+  if i == 1 and _G.canspawn32 == true then 
+        CreateUnitByName("npc_dota_neutral_black_drake", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_black_drake", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_black_dragon", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 2 and _G.canspawn32 == true then 
+        CreateUnitByName("npc_dota_neutral_rock_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_rock_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_granite_golem", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 3 and _G.canspawn32 == true then 
+        CreateUnitByName("npc_dota_neutral_small_thunder_lizard", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_small_thunder_lizard", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_big_thunder_lizard", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+  if i == 4 and _G.canspawn32 == true then 
+        CreateUnitByName("npc_dota_neutral_prowler_acolyte", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_prowler_acolyte", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        CreateUnitByName("npc_dota_neutral_prowler_shaman", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
+end
+
+end
+
+end
+
+
+
 
 
 

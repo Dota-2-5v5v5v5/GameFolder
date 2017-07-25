@@ -10,6 +10,7 @@ function Trialsofretribution:_OnGameRulesStateChange(keys)
   elseif newState == DOTA_GAMERULES_STATE_INIT then
     --Timers:RemoveTimer("alljointimer")
   elseif newState == DOTA_GAMERULES_STATE_HERO_SELECTION then
+   
     Trialsofretribution:PostLoadPrecache()
     Trialsofretribution:OnAllPlayersLoaded()
 
@@ -68,6 +69,7 @@ function Trialsofretribution:_OnEntityKilled( keys )
     if END_GAME_ON_KILLS and GetTeamHeroKills(killerEntity:GetTeam()) >= KILLS_TO_END_GAME_FOR_TEAM then
       GameRules:SetSafeToLeave( true )
       GameRules:SetGameWinner( killerEntity:GetTeam() )
+
     end
 
     --PlayerResource:GetTeamKills

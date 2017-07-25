@@ -99,7 +99,7 @@ function Trialsofretribution:_InitTrialsofretribution()
   ListenToGameEvent('dota_player_pick_hero', Dynamic_Wrap(Trialsofretribution, 'OnPlayerPickHero'), self)
   ListenToGameEvent('dota_team_kill_credit', Dynamic_Wrap(Trialsofretribution, 'OnTeamKillCredit'), self)
   ListenToGameEvent("player_reconnected", Dynamic_Wrap(Trialsofretribution, 'OnPlayerReconnect'), self)
-
+  ListenToGameEvent()
   ListenToGameEvent("dota_illusions_created", Dynamic_Wrap(Trialsofretribution, 'OnIllusionsCreated'), self)
   ListenToGameEvent("dota_item_combined", Dynamic_Wrap(Trialsofretribution, 'OnItemCombined'), self)
   ListenToGameEvent("dota_player_begin_cast", Dynamic_Wrap(Trialsofretribution, 'OnAbilityCastBegins'), self)
@@ -125,7 +125,11 @@ function Trialsofretribution:_InitTrialsofretribution()
       Trialsofretribution:StartEventTest()
     end, "events test", 0)]]
 
-
+  local spew = 0
+  if TRIALSOFRETRIBUTION_DEBUG_SPEW then
+    spew = 1
+  end
+  Convars:RegisterConvar('trialsofretribution_spew', tostring(spew), 'Set to 1 to start spewing junglebash debug info.  Set to 0 to disable.', 0)
   
 
   -- Change random seed
@@ -179,7 +183,7 @@ function Trialsofretribution:_CaptureTrialsofretribution()
     mode:SetLoseGoldOnDeath( LOSE_GOLD_ON_DEATH )
     mode:SetMaximumAttackSpeed( MAXIMUM_ATTACK_SPEED )
     mode:SetMinimumAttackSpeed( MINIMUM_ATTACK_SPEED )
-    mode:SetStashPurchasingEnabled ( ENABLE_STASH_PURCHASING )
+    mode:SetStashPurchasingDisabled ( DISABLE_STASH_PURCHASING )
 
     for rune, spawn in pairs(ENABLED_RUNES) do
       mode:SetRuneEnabled(rune, spawn)

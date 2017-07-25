@@ -9,7 +9,10 @@ function Trialsofretribution:OnDisconnect(keys)
   local networkid = keys.networkid
   local reason = keys.reason
   local userid = keys.userid
+  local plyID = keys.PlayerID
+  local team = plyID:GetTeamNumber()
 
+  
 end
 -- The overall game state has changed
 function Trialsofretribution:OnGameRulesStateChange(keys)
@@ -137,8 +140,8 @@ function Trialsofretribution:OnPlayerLevelUp(keys)
   DebugPrint('[TRIALSOFRETRIBUTION] OnPlayerLevelUp')
   DebugPrintTable(keys)
 
-  local player = EntIndexToHScript(keys.player)
-  local level = keys.level
+
+
 end
 
 -- A player last hit a creep, a tower, or a hero
@@ -273,21 +276,21 @@ function Trialsofretribution:OnCourierKilled ( keys )
 	local killedUnit = EntIndexToHScript( keys.entindex_killed )
 	local killedTeam = killedUnit:GetTeamNumber()
 	print(killedUnit:GetTeamNumber())
-		if(killedTeam == 6) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_02")end
-		if(killedTeam == 7) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_11")end
-		if(killedTeam == 8) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_01")end
-		if(killedTeam == 9) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_03")end 
-		if(killedTeam == 2) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_03")end
+		if(killedTeam == 6) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_06")end
+		if(killedTeam == 7) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_02")end
+		if(killedTeam == 8) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_10")end
+		if(killedTeam == 9) then EmitAnnouncerSound("announcer_ann_custom_courier_slain_13")end 
+
 end
 
 function Trialsofretribution:OnRoshanKilled ( keys )
 	local killedUnit = EntIndexToHScript( keys.entindex_killed )
 	local killer = EntIndexToHScript( keys.entindex_attacker )
 	local killing_team = killer:GetTeamNumber()
-	if(killing_team == 6) then EmitAnnouncerSound("announcer_ann_custom_roshan_fall_02")end
-	if(killing_team == 7) then EmitAnnouncerSound("announcer_ann_custom_roshan_fall_11")end
-	if(killing_team == 8) then EmitAnnouncerSound("announcer_ann_custom_roshan_fall_01")end
-	if(killing_team == 9) then EmitAnnouncerSound("announcer_ann_custom_roshan_fall_03")end
+	if(killing_team == 6) then EmitAnnouncerSound("announcer_ann_custom_roshan_fall_06")end
+	if(killing_team == 7) then EmitAnnouncerSound("announcer_ann_custom_roshan_fall_02")end
+	if(killing_team == 8) then EmitAnnouncerSound("announcer_ann_custom_roshan_fall_10")end
+	if(killing_team == 9) then EmitAnnouncerSound("announcer_ann_custom_roshan_fall_13")end
 end
 
 function Trialsofretribution:OnCreatureKilled( keys )
@@ -318,13 +321,13 @@ function Trialsofretribution:OnCustomTowerKilled( keys )
     end
    
     if(tower_name == "radiantbot1" or tower_name == "radiantbot2" or tower_name == "radiantbot3" or tower_name == "radiantmid1" or tower_name == "radiantmid2" or tower_name == "radiantmid3" or tower_name == "radianttop1" or tower_name == "radianttop2" or tower_name == "radianttop3" or tower_name == "radianttop4" or tower_name == "radiantbot4") then
-EmitAnnouncerSound("announcer_ann_custom_tower_fall_01") end
+EmitAnnouncerSound("announcer_ann_custom_tower_fall_10") end
     if(tower_name == "direbot1" or tower_name == "direbot2" or tower_name == "direbot3" or tower_name == "diremid1" or tower_name == "diremid2" or tower_name == "diremid3" or tower_name == "diretop1" or tower_name == "diretop2" or tower_name == "diretop3" or tower_name == "diretop4" or tower_name == "direbot4") then
-EmitAnnouncerSound("announcer_ann_custom_tower_fall_03")end
-	if(tower_name == "tempestbot1" or tower_name == "temestbot2" or tower_name == "tempestbot3" or tower_name == "tempestmid1" or tower_name == "tempestmid2" or tower_name == "tempestmid3" or tower_name == "tempesttop1" or tower_name == "tempesttop2" or tower_name == "tempesttop3" or tower_name == "tempesttop4" or tower_name == "tempestbot4") then
+EmitAnnouncerSound("announcer_ann_custom_tower_fall_13")end
+	  if(tower_name == "fallbot1" or tower_name == "fallbot2" or tower_name == "fallbot3" or tower_name == "fallmid1" or tower_name == "fallmid2" or tower_name == "fallmid3" or tower_name == "falltop1" or tower_name == "falltop2" or tower_name == "falltop3" or tower_name == "falltop4" or tower_name == "fallbot4") then
 EmitAnnouncerSound("announcer_ann_custom_tower_fall_02")end
-	if(tower_name == "altiarbot1" or tower_name == "altiarbot2" or tower_name == "altiarbot3" or tower_name == "altiarmid1" or tower_name == "altiarmid2" or tower_name == "altiarmid3" or tower_name == "altiartop1" or tower_name == "altiartop2" or tower_name == "altiartop3" or tower_name == "altiartop4" or tower_name == "altiarbot4") then
-EmitAnnouncerSound("announcer_ann_custom_tower_fall_11")end
+	  if(tower_name == "altiarbot1" or tower_name == "altiarbot2" or tower_name == "altiarbot3" or tower_name == "altiarmid1" or tower_name == "altiarmid2" or tower_name == "altiarmid3" or tower_name == "altiartop1" or tower_name == "altiartop2" or tower_name == "altiartop3" or tower_name == "altiartop4" or tower_name == "altiarbot4") then
+EmitAnnouncerSound("announcer_ann_custom_tower_fall_06")end
  
     local tower_num = tonumber(tower_name:sub(string.len(tower_name),string.len(tower_name)))
    
@@ -375,10 +378,10 @@ function Trialsofretribution:OnFortKilled( keys )
   local killedUnit = EntIndexToHScript( keys.entindex_killed )
   local killedTeam = killedUnit:GetTeamNumber()
 
-  if(killedTeam == 6) then EmitAnnouncerSound("announcer_ann_custom_defeated_02")end 
-  if(killedTeam == 7) then EmitAnnouncerSound("announcer_ann_custom_defeated_011")end 
-  if(killedTeam == 8) then EmitAnnouncerSound("announcer_ann_custom_defeated_01")end 
-  if(killedTeam == 9) then EmitAnnouncerSound("announcer_ann_custom_defeated_03")end  
+  if(killedTeam == 6) then EmitAnnouncerSound("announcer_ann_custom_defeated_06")end 
+  if(killedTeam == 7) then EmitAnnouncerSound("announcer_ann_custom_defeated_02")end 
+  if(killedTeam == 8) then EmitAnnouncerSound("announcer_ann_custom_defeated_10")end 
+  if(killedTeam == 9) then EmitAnnouncerSound("announcer_ann_custom_defeated_13")end  
 
   local all_units = Entities:FindAllInSphere(Vector(0,0,0), 12000.0)
   local remainingFort
@@ -435,29 +438,39 @@ function Trialsofretribution:OnFortKilled( keys )
   end
   if fortCount == 1 then
     GameRules:SetGameWinner(remainingFort:GetTeamNumber())
-	if(remainingFort:GetTeamNumber() == 6) then EmitAnnouncerSound("announcer_ann_custom_victory_02")end
-	if(remainingFort:GetTeamNumber() == 7) then EmitAnnouncerSound("announcer_ann_custom_victory_011")end
-	if(remainingFort:GetTeamNumber() == 8) then EmitAnnouncerSound("announcer_ann_custom_victory_01")end
-	if(remainingFort:GetTeamNumber() == 9) then EmitAnnouncerSound("announcer_ann_custom_victory_03")end
+	if(remainingFort:GetTeamNumber() == 6) then EmitAnnouncerSound("announcer_ann_custom_victory_06")end
+	if(remainingFort:GetTeamNumber() == 7) then EmitAnnouncerSound("announcer_ann_custom_victory_02")end
+	if(remainingFort:GetTeamNumber() == 8) then EmitAnnouncerSound("announcer_ann_custom_victory_10")end
+	if(remainingFort:GetTeamNumber() == 9) then EmitAnnouncerSound("announcer_ann_custom_victory_13")end
     GameRules:SetSafeToLeave(true)
-    GameRules:Victory()
+    
   end
 
   --puts all the players on the lost team on custom team 3
   for _, playerID in pairs(players) do
     local player = PlayerResource:GetPlayer(playerID)
+    local player1 = GetPlayerName(iplayerID)
     local hero = player:GetAssignedHero()
-    if hero:IsAlive() then
-      hero:SetRespawnsDisabled(true)
-      hero:ForceKill(false)
-      else
-        heroRespawnUnit()
-        hero:SetRespawnsDisabled(true)
-        hero:ForceKill(false)
+
+  local level = keys.level
+  print(player)
+  print(hero)
+      file = InitLogFile("stats.txt", "test")
+  AppendToLogFile("stats.txt", "player eliminated: " )
+  AppendToLogFile("stats.txt", tostring(player) )
+  AppendToLogFile("stats.txt", "playing as: " )
+  AppendToLogFile("stats.txt", tostring(hero) )
+  AppendToLogFile("stats.txt", "At Level:" )
+  AppendToLogFile("stats.txt", tostring(level) )
+     hero:SetRespawnsDisabled(true)
+     hero:RemoveSelf()
+
+
 
           
 
-        end
+  
+
 
 
     local fow = Entities:FindByName( nil, "mid"):GetAbsOrigin()
